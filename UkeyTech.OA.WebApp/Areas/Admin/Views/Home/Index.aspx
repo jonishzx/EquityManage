@@ -1,7 +1,5 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage" %>
 
-<%@ Register Assembly="UkeyTech.OA.FrameWork" Namespace="RepeaterInMvc.Codes" TagPrefix="MVC" %>
-
 <%@ Import Namespace="Clover.Web.Core" %>
 <%@ Import Namespace="Clover.Config" %>
 <%@ Import Namespace="Clover.Web.HTMLRender" %>
@@ -43,10 +41,7 @@
 </script>
     <script type="text/javascript" src="<%=Url.Content("~/Scripts/jquery-1.7.2.min.js")%>"></script>
     <script type="text/javascript" src="<%=Url.Content("~/Scripts/EasyUI/jquery.easyui.min.js")%>"></script>
-    <script type="text/javascript" src="<%=Url.Content("~/Scripts/EasyUI/jquery.portal.min.js")%>"></script>
     <script type="text/javascript" src="<%=Url.Content("~/Scripts/Common.min.js")%>"></script>
-    <script type="text/javascript" src="<%=Url.Content("~/Scripts/Calendar/WdatePicker.js")%>"></script>
-    <script type="text/javascript" src="<%=Url.Content("~/Scripts/dust-full.min.js")%>"></script>
     <script type="text/javascript" src="<%=Url.Content("~/ModuleJs/home.min.js")%>"></script>
     <script type="text/javascript" src="<%=Url.Content("~/Scripts/ForBidBackSpace.js")%>"></script>
 </head>
@@ -82,38 +77,37 @@
     <div region="west" split="true" border="true" title="系统菜单" style="width: 190px;" class="sidebarbox_bg">
         <div class="sidebarbox">
             <ul class="lable">
-                <MVC:MvcRepeater ID="rpParentMenu" Name="PMenusItems" runat="server">
-                    <ItemTemplate>
-                        <li mid="<%# Eval("ModuleID") %>"><%# Eval("Name")%></li>
-                    </ItemTemplate>
-                </MVC:MvcRepeater>
+                <%foreach (var m in (dynamic)ViewData["PMenusItems"]) {%>
+                    <li mid="<%:m.ModuleID %>"><%:m.Name%></li>
+                <%} %>
             </ul>
             <div class="content">
-                <MVC:MvcRepeater ID="rpTreeMenu" Name="PMenusItems" runat="server">
-                    <ItemTemplate>
-                        <div class="divbox" mid="<%# Eval("ModuleID") %>">
-                            <div class="stree"><%# UkeyTech.OA.WebApp.Helper.RenderChildrenNodesVisible((IWebContext)ViewData["PWebContext"],(List<int>)ViewData["ModuleItems"],Eval("Id").ToString())%></div>
+                <%foreach (var m in (dynamic)ViewData["PMenusItems"]) {%>
+                    <div class="divbox" mid="<%:m.ModuleID %>">
+                            <div class="stree"><%= UkeyTech.OA.WebApp.Helper.RenderChildrenNodesVisible((IWebContext)ViewData["PWebContext"],
+    (List<int>)ViewData["ModuleItems"],m.Id.ToString())%></div>
                         </div>
-                    </ItemTemplate>
-                </MVC:MvcRepeater>
+                <%} %>
             </div>
         </div>
     </div>
 
     <div id="content" region="center" split="true" border="true">
         <div id="tabs" class="easyui-tabs" fit="true" border="false">
-            <div id="desktop" title="我的桌面[<span id='dstool' class='icon icon-tool' style='padding:0 0 0 15px;'>&nbsp;</span>]" icon="icon icon-home" closable="false">
-                <div id="desktopSetting" style="display: none; z-index: 999; position: absolute; background-color: #fff" class="panel-body ">
+            <div id="desktop" title="我的桌面" icon="icon icon-home" closable="false">
+                <%--<div id="desktopSetting" style="display: none; z-index: 999; position: absolute; background-color: #fff" class="panel-body ">
                     <a id="portalsetting" href="javascript:void(0);"><span class="memo-icon icon icon-plugin" style="padding: 0; margin: 0;"></span>桌面设置</a>
-                </div>
-                <div id="pp" style="position: relative;">
+                </div>--%>
+             <%--   <div id="pp" style="position: relative;">
                     <div style="width: 25%; float: left">
                         <span style="height: 2px; width: 10px; display: block;">&nbsp;</span>
                     </div>
                     <div style="width: 75%; float: left;">
                         <span style="height: 2px; width: 10px; display: block;">&nbsp;</span>
                     </div>
-
+                </div>--%>
+                <div style="width:500px;height:500px;line-height:400px; margin:0 auto">
+                    <h1>欢迎使用区块链股权管理系统</h1>
                 </div>
             </div>
         </div>

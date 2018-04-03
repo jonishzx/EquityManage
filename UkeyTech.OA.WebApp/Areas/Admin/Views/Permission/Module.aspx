@@ -30,8 +30,8 @@
             <MVC:MvcRepeater ID="rpTreeMenu" Name="PMSystemList" runat="server">
                 <ItemTemplate>
                     <div class="divbox">
-                        <strong>
-                            <%# Eval("SystemName")%></strong>
+                        <%--<strong>
+                            <%# Eval("SystemName")%></strong>--%>
                         <ul id="treeModule_<%#Eval("SystemID")%>" class="treeModule">                           
                         </ul>
                     </div>
