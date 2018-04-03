@@ -12,7 +12,7 @@ namespace UkeyTech.OA.WebApp.Areas.Warranty.Controllers
         // GET: /Article/
 
         public ActionResult Index()
-        {
+        {  
             return View();
         }
 
