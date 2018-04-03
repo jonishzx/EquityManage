@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <style type="text/css">
+
+    body{font-size:13px;margin:0px;background-color:#FF999A;}
+  
+    label{font-weight:bold;width:100px;display:inline-block;}
+    #errContainer{  background-color: #f0f0f0;padding: 10px;}
+    #dvDetail{ display: block; padding: 5px;}
+    #title {color: #4F6DBE;background-color: #eef2fe;height: 30px;border-bottom: solid;padding: 10px 0 0;text-align: center;font-size: 17px;}
+    #header{margin: 0;}
+    .page{margin: 20px;border:solid 1px;}
+    h1{margin:0;border-bottom:solid 1px #000;padding:10px;}
+　　</style>
+    <script type="text/javascript">
+        function setScrolling() {
+            window.parent.scrolling = 'yes';
+        }
+    </script>
+</head>
+<body class="error" scroll="yed" onload="setScrolling">
+    <div class="page">
+        <div id="header">
+            
+            <div id="title">
+               
+                     <asp:ContentPlaceHolder ID="HeaderContent" runat="server" />
+            </div>
+        </div>
+        <div id="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <div id="footer">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

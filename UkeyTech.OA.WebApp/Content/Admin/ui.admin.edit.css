@@ -1,0 +1,312 @@
+﻿/*table container*/
+#HeaderContainer
+{
+	margin-bottom:20px;
+	}
+#BodyContainer{height:22em;
+	margin-left: 4px;
+	margin-top: 4px;
+}
+.shadow
+{
+position: relative;
+	bottom: 2px;
+	right: 2px;
+	background-color: #666; /*shadow color*/
+}
+.ui-important
+{
+	font-weight:bold;
+	color:#FF8080;
+	padding:0 2px 0 2px;
+	font-size:1.0em
+	}
+/*input*/
+.EditForm label{font-size:0.9em;color:#2E6E9E;}
+.EditForm label,.EditForm .button{cursor:pointer;
+font-size:0.9em;
+overflow:visible;
+width:auto;
+padding:0.2em 1em 0 1em;
+}
+.EditForm .textbox{font-size:0.9em;
+overflow:visible;
+width:auto;
+padding:0.2em 0.1em 0 0em;}
+/*link*/
+a{text-decoration: none ;}
+
+/*title*/
+.title{float:none;}
+
+/*** MASTER .EditForm WIDTHS - CUSTOMIZE THIS TO CHANGE THE .EditForm LAYOUT ***/
+.EditForm{width:550px !important;clear:both;font-size:0.9em;}
+fieldset.submit{padding-left: 160px !important;border:none;margin:10px 0 0 0;}
+.EditForm label{padding:0px 10px;width: 100px;}
+.EditForm label.error,.EditForm input.submit{margin-left:180px !important;}		
+.EditForm fieldset fieldset label.error{margin-left:0px !important;}		
+.EditForm .centered{margin-left:180px !important;width:200px !important;}
+.EditForm .group,
+.EditForm .control{width: 200px !important;}
+.EditForm .text,.EditForm textarea,.EditForm select{width: 250px !important;}
+fieldset.submit input{width: 100px !important;padding-top:2px}
+.EditForm .button{width: auto !important;}
+/*.EditForm .button{width: 100px !important;}*/
+/*** FIELDSETS AND LEGENDS ***/
+.EditForm fieldset
+		{
+		margin: 0 0 1em 0;
+		padding: 0 0 10px 0px;
+		border: 1px solid #BFBAB0;
+		
+		background-color: #F2EFE9;
+		background-image: url(../images/fieldset_gradient.jpg);
+		background-repeat: repeat-x;
+		
+		background-color: #fff;
+		background-image: url(../images/fieldset-gradient-02.jpg);
+		background-position:bottom;
+		float: left;
+		clear: both;
+		width: 100%;
+}
+	
+.EditForm legend{color: #2E6E9E;font-size:1.3em;font-weight: bold;font-variant:small-caps;margin-left: 1em;padding:0px 5px;}
+.EditForm fieldset p{margin:10px 0px 0px 10px;}
+	
+/*** .EditForm BLOCKS ***/
+
+.EditForm ul{padding:5px 10px;list-style: none;}
+	
+.EditForm li{width: 100%;padding:5px 0px 5px 0;border-top:1px dotted #ccc;display:block;float: left;clear: left;}
+	
+.EditForm li:first-child{border:none;}
+	
+/*** .EditForm BLOCK ELEMENTS ***/
+
+	.EditForm label
+		{
+		padding:0px 10px;
+		width: 120px;
+		float: left;
+		}
+	.EditForm table label
+    {
+		padding:0px 10px;
+		width: auto;
+		float: none;
+    }	
+	.EditForm .error{
+		color: #c00;
+		}
+		
+	.EditForm label.error
+		{
+		color: #c00;
+		
+		font-size: 100%;
+		font-weight: bold;
+		font-variant:small-caps;
+		
+		width:308px;
+		display: none;
+
+		margin:8px 0px 0px 180px;
+		padding:3px 0px 0px 5px;
+		border-top:1px dotted #ccc;
+		
+		clear:both;
+		}
+		
+	.EditForm label.info{
+		font-size: 100%;
+		font-weight: bold;
+		font-variant:small-caps;
+		
+		margin:8px 0px 0px 180px;
+		padding:3px 0px 0px 5px;
+		}
+
+	.EditForm fieldset fieldset,
+	.EditForm .group
+		{
+		width:200px;
+		
+		margin: 0;
+		border:none;
+		
+		background:none;
+		
+		float:left;
+		clear: none;
+		
+		}
+		
+	.EditForm fieldset fieldset label
+		{
+		width:auto !important;
+		white-space:nowrap;
+		padding:0px;
+		margin:0px;
+		display:block;
+		clear:both;
+		}
+		
+	.EditForm label label.error{
+		margin-left:0px;
+		}
+
+	.EditForm label.centered{
+		padding:0px 0px;
+		width:200px !important;
+		}
+/* see also the error class at the foot of the page */
+	
+.EditForm fieldset fieldset label.spaced{margin-bottom:3px;}
+
+/*** .EditForm ELEMENT COLUMNS ***/
+
+	.col-1,
+	fieldset fieldset.col-1 label
+		{
+		width:100%;
+		}
+
+	.col-2,
+	fieldset fieldset.col-2 label
+		{
+		width:50%;
+		}
+
+	.col-3,
+	fieldset fieldset.col-3 label
+		{
+		width:33%;
+		}
+
+	.col-4,
+	fieldset fieldset.col-4 label
+		{
+		width:25%;
+		}
+
+
+
+
+/*** .EditForm ELEMENTS ***/
+
+	.EditForm input.submit{
+		margin:10px 0px 10px 180px;
+		padding:0px 2px;
+
+		}
+
+.EditForm input, textarea, select, 
+	.EditForm label
+		{
+		font-size:1.1em;
+		}
+
+	.EditForm input, textarea, select
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		}
+
+	
+	.EditForm .input[type="text"],
+	.EditForm textarea
+		{
+		padding:1px;
+		}
+		
+	.EditForm .input[type="radio"],
+	.EditForm .input[type="checkbox"]
+		{
+		margin:0px;
+		padding:0px;
+		position:relative;
+		top:3px;
+		}
+		
+/*** SUPPORTING CLASSES ***/
+
+	.EditForm label.required{
+		background-image:url(../images/required_star.gif);
+		background-position:right;
+		background-repeat:no-repeat;
+		}
+	
+	.EditForm span.required{
+		padding-right:15px;
+		}
+		
+	.EditForm .clean
+		{
+		border:none;
+		}
+		
+	.EditForm .info{
+		padding-top:0.5em;
+		font-size:80%;
+		line-height:100%;
+		color:#aaa;
+		}
+		
+	.EditForm .indent{
+ 		padding:2px 20px; 
+		width:auto !important;
+		white-space:nowrap;
+		padding-left: 25px !important;
+ 		}
+		
+	.EditForm label.disabled{
+		color:#aaa;
+		}
+	
+	.EditForm .highlight{
+		background-color:#e2e2e2;
+		}
+	
+	.off{
+		display:none !important;
+		}
+		
+	.clear{
+		clear:both;
+		}
+		
+	.EditForm .clean
+		{
+		border:none;
+		}
+		
+	.EditForm .info{
+		padding-top:0.5em;
+		font-size:80%;
+		line-height:100%;
+		color:#aaa;
+		}
+		
+	.EditForm .indent{
+ 		padding:2px 20px; 
+		width:auto !important;
+		white-space:nowrap;
+		padding-left: 25px !important;
+ 		}
+		
+	.EditForm label.disabled{
+		color:#aaa;
+		}
+	
+	.EditForm .highlight{
+		background-color:#e2e2e2;
+		}
+	
+	.off{
+		display:none !important;
+		}
+		
+	.clear{
+		clear:both;
+		}
+		

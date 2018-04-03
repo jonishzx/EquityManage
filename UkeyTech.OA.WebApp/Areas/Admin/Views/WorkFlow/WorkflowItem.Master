@@ -1,0 +1,188 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage<UkeyTech.WebFW.WorkFlow.Model.BusiWorkFlowModel>" %>
+<%@ Import Namespace="UkeyTech.OA.WebApp" %>
+<%@ Import Namespace="UkeyTech.OA.WebApp.Extenstion" %>
+
+<%@ Register Src="~/Areas/Admin/Views/Shared/Loading.ascx" TagName="Loading" TagPrefix="ld" %>
+<%@ Register src="~/Areas/Admin/Views/Shared/ScriptBlock.ascx" tagname="ScriptBlock" tagprefix="uc1" %>
+<%@ Register src="~/Areas/Admin/Views/Shared/PopupWin.ascx" tagname="PopupWin" tagprefix="uc2" %>
+<%@ Register Src="~/Areas/Admin/Views/Shared/AllScript.ascx" TagName="AllScript" TagPrefix="as" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>
+        <%=Clover.Config.WebSiteConfig.Config.WebAppName%><asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+  
+    <script type="text/javascript">
+         if (typeof (Object) === "undefined") {
+             window.location.reload();
+         }
+         var rooturl = '<%= Clover.Web.Core.Utility.ConvertAbsoulteUrl("~/") %>';
+         var commonpopupurl = '<%=Url.Action("PopupSelectView","Utility")%>';
+    </script>
+    <as:AllScript ID="AllScriptBlock" runat="server" />
+    <asp:ContentPlaceHolder ID="Script" runat="server">
+    </asp:ContentPlaceHolder>
+   
+    <uc1:ScriptBlock ID="ScriptBlockA" runat="server" />
+    <script type="text/javascript">
+    $(function(){
+     <%if (Model.ShowAttachment)    
+       {%>
+        if(typeof(initAttachmentGrid) != "undefined")
+            initAttachmentGrid();
+        <%} %>
+        <%if (Model.ShowHistory && Model.IsOnProcess)    
+       {%>
+            if(typeof(initWorkflowLogGrid) != "undefined")
+            initWorkflowLogGrid();
+        <%}%>
+     });
+    </script>
+</head>
+<body class="easyui-layout">
+    <ld:loading id="Loading1" runat="server" />
+    <div region="center" border="false" class="CenterForm" style="position: relative;
+        left: 0; top: 0;">
+        <%using (Html.BeginForm())
+          {%>
+    <div>
+        <input type="hidden" id="BusiId" name="BusiId" value="<%=Model.BusiId %>" />
+        <input type="hidden" id="AllowSave" name="AllowSave" value="<%=Model.AllowSave %>" />
+        <input type="hidden" id="AllowSubmit" name="AllowSubmit" value="<%=Model.AllowSubmit %>" />
+        <input type="hidden" id="AllowReject" name="AllowReject" value="<%=Model.AllowReject %>" />
+        <input type="hidden" id="FormId" name="FormId" value="<%=Model.FormId %>" />
+        <input type="hidden" id="IsNew" name="IsNew" value="<%=Model.IsNew %>" />
+        <input type="hidden" id="IsFinished" name="IsFinished" value="<%=Model.IsFinished %>" />
+        <input type="hidden" id="IsOnProcess" name="IsOnProcess" value="<%=Model.IsOnProcess %>" />
+        <input type="hidden" id="AllowSelectNextActor" name="AllowSelectNextActor" value="<%=Model.AllowSelectNextActor %>" />
+        <input type="hidden" id="AllowSelectNextStep" name="AllowSelectNextStep" value="<%=Model.AllowSelectNextStep %>" />
+        <input type="hidden" id="NextStepFilter" name="NextStepFilter" value="<%=Model.NextStepFilter %>" />
+        <input type="hidden" id="NextActorSelector" name="NextActorSelector" value="<%=Model.NextActorSelector %>" />
+        <input type="hidden" id="ShowHistory" name="ShowHistory" value="<%=Model.ShowHistory %>" />
+        <input type="hidden" id="ProcessId" name="ProcessId" value="<%=Model.ProcessId %>" />
+        <input type="hidden" id="ProcessInstanceId" name="ProcessInstanceId" value="<%=Model.ProcessInstanceId %>" />
+        <input type="hidden" id="AttachmentType" name="AttachmentType" value="<%=Model.AttachmentType %>" />
+        <input type="hidden" id="AttachmentAction" name="AttachmentAction" value="<%=Model.AttachmentAction %>" />
+        <input type="hidden" id="NextActivityId" name="NextActivityId" value="" />
+        <input type="hidden" id="NextActivityActors" name="NextActivityActors" value="" />
+        <input type="hidden" id="RejectToFirst" name="RejectToFirst" value="<%=Model.RejectToFirst %>" />
+        <input type="hidden" id="SkipActWhenActorIsSame" name="SkipActWhenActorIsSame" value="<%=Model.SkipActWhenActorIsSame %>" />
+        <input type="hidden" id="SkipActWhenExpired" name="SkipActWhenExpired" value="<%=Model.SkipActWhenExpired %>" />
+        <input type="hidden" id="SkipActWhenNoActors" name="SkipActWhenNoActors" value="<%=Model.SkipActWhenNoActors %>" />
+    </div> 
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">    
+    </asp:ContentPlaceHolder>
+     <%}%>
+     <!--附件信息-->
+     <%if (Model.ShowAttachment)    
+      {%>
+   
+      <%Html.RenderPartial(Helper.AttachmentPath,
+                                    new ViewDataDictionary(new
+                                    {
+                                        //AllowEditAttachment = Model.AllowEditAttachment && Model.AllowSubmit,
+                                        AllowEditAttachment = true,
+                                        TargetID = Model.BusiId,
+                                        TargetType = Model.AttachmentType,
+                                        ActionName = Model.AttachmentAction,
+                                        MutilUpload = true
+                                    }));%>
+ 
+    <%} %>
+    <!--流程日志-->
+     <%if (Model.ShowHistory)    
+      {%>
+
+      <%Html.RenderPartial(Helper.WorkflowLogPath,
+                                    new ViewDataDictionary(new
+                                    {
+                                        GetWorkItemListAction = "GetProcessWorkItemList",
+                                        ProcessInstanceId = Model.ProcessInstanceId
+                                    }));%>
+  
+    <%}%>
+    </div>
+    <div region="south" border="false" class="SouthForm form-action">
+        <%if (!Model.IsFinished && Model.AllowSave)
+          { %>
+        <a class="easyui-linkbutton" icon="icon-save" href="#" onclick="javascript:if(confirm('是否保存信息')){ if(typeof(beforeSave) != 'undefined')beforeSave(); SubmitForm('save');}" id="btnSave">保存</a> 
+        <%} %>
+         <%if (!Model.IsFinished && Model.AllowSubmit && !string.IsNullOrEmpty(Model.FormId) && (Model.IsNew || (Model.IsOnProcess && !string.IsNullOrEmpty(Model.WorkItemId)) || !Model.IsOnProcess))
+              { %>
+             <a class="easyui-linkbutton" icon="icon-ok" href="#" onclick="submitWorkFlow()" id="btnSubmit">提交</a>
+            <%} %>
+        <%if (!Model.IsFinished && Model.AllowSubmit && !string.IsNullOrEmpty(Model.FormId) && !string.IsNullOrEmpty(Model.WorkItemId) && Model.AllowReject)
+           { %>
+             <a id="btnReject" class="easyui-linkbutton" icon="icon-reject" href="#" onclick="<%= Model.RejectToFirst ? "javascript:if(confirm('是退回到发起人')){SubmitForm('reject');}" : "showRejectSelector()"%>">退回</a>
+
+        <%} %>
+        <a class="easyui-linkbutton" icon="icon-cancel" href="javascript:void(0)"
+                onclick="CloseTheWin();" runat="server" id="btnCancel">取消</a>
+    </div>
+     <uc2:PopupWin ID="PopupWin1" runat="server" />
+     <script type="text/javascript">
+       function beforeSubmit(){}
+        //退回
+        function showRejectSelector(){
+            SetWin("300", "400", '<%=Url.Action("WFRejectActivtySelector","WorkFlow",new {Area ="Admin" })%>' + '?workItemId=<%=Model.WorkItemId%>', '退回到指定步骤');
+        }
+        function rejectCallback(val){
+            if(confirm('确认退回流程?')){
+                if(val){
+                    $("#NextActivityId").val(val);
+                }
+                SubmitForm('reject', (typeof (beforeReject) != "undefined" ? beforeReject : null), false, false);    
+            }
+        }
+        function checkBizValidation(){
+            return ((typeof (validateBizForm) !== 'undefined' && validateBizForm()) || typeof (validateBizForm) == 'undefined');
+        }
+       
+        function submitWorkFlow(){
+           if(typeof(beforeSave) != 'undefined')beforeSave(); 
+            if(checkBizValidation()){ 
+                <%if(Model.AllowSelectNextStep) {%>
+                showActivitySelector();
+                <%}else{%>
+                if(confirm('是否提交流程信息')){
+                    SubmitForm('submit', beforeSubmit);
+                }
+                <%} %>
+            }
+        }
+        <%if(Model.AllowSelectNextStep) {%>
+        //提交活动选择
+        function showActivitySelector(){
+             SetWin("600", "400", 
+            '<%=Url.Action("WFRelActivtySelector","WorkFlow",new {Area ="Admin" })%>'
+             + '?workItemId=<%=Model.WorkItemId%>'
+             + '&allowselectuser=<%= Model.AllowSelectNextActor%>'
+             + '&userselaction=<%= Model.NextActorSelector%>'
+             + '&ProcessId=<%= Model.ProcessId%>'
+             , '选择下一步骤');
+        }
+        function submitCallback(val){
+            if(confirm('是否提交流程信息')){
+                if(val){
+                    $("#NextActivityId").val(val.NextActivityId);
+                    $("#NextActivityActors").val(val.NextActivityActors);
+                }
+                SubmitForm('submit', beforeSubmit);
+                return true;
+            }
+            else
+                return false;
+        }
+        <%} %>
+       $(function(){
+          
+            <%if ((!Model.AllowSave || Model.IsReadonly) && (ViewData["UIScript"]==null || (ViewData["UIScript"]!=null && string.IsNullOrEmpty(ViewData["UIScript"].ToString()))))
+            { %>
+                    setreadonly();
+            <%}%>
+            <%=ViewData["UIScript"] %>
+        });
+     </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #fff url('images/bg_page.jpg') no-repeat center top;
+}
+
+body, textarea, input, select, td, div, p, label {
+    font-size: 12px;
+    font-family: Arial,Tahoma,"宋体";
+}
+
+a {
+    color: #19276B;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #7598DC;
+        text-decoration: none;
+    }
+
+.clear {
+    clear: both;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.LoginButton {
+    background: url("images/buttonbg.gif") repeat-x scroll left bottom transparent;
+    border: 1px solid #919699;
+    cursor: pointer;
+    line-height: 20px;
+    padding: 2px 3px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    margin-right: 160px;
+}
+
+#LoginContainer {
+    width: 539px;
+    height: 289px;
+    position: absolute;
+    margin: -182px 0 0 -265px;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+}
+
+.loginBgImage {
+    float: left;
+}
+
+#LoginMain {
+    float: left;
+    width: 501px;
+    height: 289px;
+    background: url('images/login_bg_center.gif') repeat-x center center;
+    margin-bottom: 5px;
+}
+
+#LoginLogo {
+    float: left;
+    width: 161px;
+    height: 289px;
+    background: url('images/login_separate_line.gif') no-repeat right center;
+}
+
+#LoginFormContainer {
+    float: left;
+    width: 340px;
+    height: 289px;
+}
+
+.LoginForm {
+    margin: 80px 25px 0 0;
+}
+
+#LoginFormContainer p {
+    margin: 11px 0;
+}
+
+    #LoginFormContainer p label {
+        color: #688;
+        font-size: 14px;
+        font-wight: weight;
+        line-height: 24px;
+        float: left;
+        display: block;
+        width: 92px;
+        text-align: right;
+        padding-right: 10px;
+        padding-top: 3px!important;
+        padding-top: 5px;
+    }
+
+#LoginFormContainer .TxtInput {
+    background: url('images/login_input.gif') repeat-x;
+    border: 1px solid #BCBCBC;
+    width: 200px;
+    height: 30px;
+    padding-left: 5px;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #41697E;
+}
+
+#LoginFormContainer .select {
+    border: 1px solid #BCBCBC;
+    font-size: 12px;
+    line-height: 14px;
+    color: #454545;
+    width: 120px;
+    height: 24px;
+    padding: 3px;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+#LoginFormContainer .loginSubmit {
+    background: url('images/login_button.gif') no-repeat center center;
+    border: 0;
+    width: 108px;
+    height: 38px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+    #LoginFormContainer .loginSubmit:hover {
+        cursor: pointer;
+        color: #DDD;
+    }
+
+#LoginFormContainer #ActionMessage {
+    clear: both;
+    width: 280px;
+    margin: 40px 0 0 30px;
+    padding: 3px 0;
+    text-align: center;
+    border: 1px solid #C7D5F1;
+}
+
+.GoodNews {
+    background-color: #52E070;
+}
+
+.Warning {
+    background-color: #FF5000;
+}
+
+.Error {
+    background-color: #FFFF0F;
+}
+
+#ForRememberMe {
+    padding-left: 5px;
+}
+
+#ShadowCenter {
+    float: left;
+    background: url('images/login_shadow.gif') repeat-x center center;
+    width: 501px;
+    height: 110px;
+}
+
+#Version {
+    background: url('images/login_logo.png') no-repeat 60% 0;
+    float: left;
+    margin: 80px 20px 0 0;
+    width: 180px;
+    height: 70px;
+    font-size: 11px;
+    color: #41697E;
+    position: absolute;
+}
+
+#LoginTitle {
+    padding-top: 10px;
+    position: absolute;
+    z-index: 9999;
+    width: 300px;
+    text-align: center;
+}
+
+    #LoginTitle h3 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+.field-validation-error {
+    color: #f00;
+    padding-left: 100px;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}

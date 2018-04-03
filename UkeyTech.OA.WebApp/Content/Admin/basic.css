@@ -1,0 +1,345 @@
+﻿/****************************** Basic *******************************/
+* {
+margin:0;
+padding:0;
+}
+
+ol,ul {list-style:none outside none;margin:0;padding:0;}
+
+input.button {
+background:url('../     images/input_button.png') no-repeat center center;
+height:24px;
+width:81px;
+border:none;
+font-size:12px;
+cursor:pointer;
+}
+
+html,body{
+height:100%;
+}
+
+a {
+color: #000000;
+}
+
+/* body */
+body {
+font-family: Tahoma;
+background:#F0F0F0;
+font-size: 12px;
+margin:0;
+padding:0;
+}
+
+
+/* common div */
+div.CommonDiv{
+  background-color: #FFFFFF;
+  border: 1px solid #919B9C;
+  margin:1px;
+  margin-left: 10px;
+  float: left;
+  display: inline;
+}
+/* common div end*/
+
+/****************************** Layout ******************************/
+
+/* top nav */
+#TopNavMain {
+width: 100%;
+background:url('images/top_nav_menu.gif') repeat-x center center;
+height: 42px;
+margin: 0;
+clear: both;
+border-bottom:1px solid;
+}
+
+#ProjectList {
+float: left
+}
+
+#TopNavLogo {
+float: left;
+margin:5px 10px 0 10px;
+}
+#TopNavLogo a
+{
+	float:left;
+}
+
+#TopNavLogo h1
+{
+	margin:0 10px 0 20px;
+	font-size:25px;
+	float:left;
+}
+#AdminTopNavButton,
+#TopNavButton {
+margin:9px 0 0 10px;
+float:left;
+margin-top: 8px\9;
+*margin-top: 9px;
+}
+
+#AdminTopNavButton ul,
+#TopNavButton ul {
+list-style-type:none;
+padding:0;
+margin:0;
+}
+
+#AdminTopNavButton ul li,
+#TopNavButton ul li {
+display:inline;
+margin-left:10px;
+float:left;
+height:28px;
+width:85px;
+margin-top:5px;
+background:url('images/button.png') no-repeat center center;
+text-align:center;
+}
+
+#TopNavButton ul li.Active{
+background:url('images/button_active.png') no-repeat center center;
+}
+
+#AdminTopNavButton ul li.Active a,
+#TopNavButton ul li.Active a{
+color:#000000;
+}
+#AdminTopNavButton ul li a,
+#TopNavButton ul li a {
+text-decoration: none;
+font-size:12px;
+font-weight:600;
+color:#CDE9FF;
+}
+
+/* top id */
+#TopBCRId {
+float: left;
+margin-top: 5px;
+width: 70%;
+font-size: 20px;
+color: #000000;
+text-decoration: none;
+}
+
+#TopBCRId a {
+color: #000000;
+float: center;
+padding: 6px 1px 0 1px;
+text-decoration: none;
+}
+
+#TopNavAbout {
+float: right;
+margin: 10px 10px 0 0;
+}
+
+#TopNavAbout a {
+margin: 0 1px 0 0;
+color: #000000;
+text-decoration: line;
+}
+
+#TopNavAbout a:hover {
+color: #666666;
+}
+
+#UserName {
+background:url(images/user.png) left center no-repeat;
+padding-left:12px;
+margin-right:6px;
+}
+
+#Statics {
+background:url(images/chart.gif) left center no-repeat;
+padding-left:16px;
+margin-right:6px;
+}
+
+#Logout {
+background:url(images/logout.gif) left center no-repeat;
+padding-left:16px;
+margin-right:6px;
+}
+
+#EditMyInfo {
+background:url(images/config.png) left center no-repeat;
+padding-left:15px;
+}
+
+#TopBCR{
+background-color: #C6C3C6;
+float:left;
+width:100%;
+margin: 0px;
+padding-top:5px;
+clear:none;
+padding-bottom:0px;
+}
+
+#TopBCR ul li{
+padding: 3px 13px 3px;
+background-color: #C6C3C6;
+}
+
+#TopBCR ul li.SpaceTab, #TopBCR ul li.EndTab{
+border-top: 1px solid #C6C3C6;
+}
+
+#TopBCR ul li.Active {
+border-bottom: 1px solid #FFFFFF;
+}
+
+#TopBCR #CreatBC {
+padding-left:0;
+padding-right:0;
+border-width:1px 0 1px;
+}
+
+#TopBCR ul li.Cram{
+padding: 0;
+}
+
+#TopBCR ul li.Cram a{
+padding: 3px 13px 3px;
+display:block;
+margin:0;
+}
+
+#TopNavProjectListLi{
+float:left;
+height:22px;
+margin-top:0px;
+border-style:none;
+border-bottom:1px solid #507CB5;
+padding-bottom:0px;
+padding-right:5px;
+padding-left:0px;
+}
+
+#TopNavProjectList {
+width:150px!important;
+border:1px solid #BCBCBC;
+height:22px;
+line-height:22px;
+float:left;
+margin-top:15px;
+font-size:14px;
+}
+
+#Open {
+margin: 18px 0px 0px 10px;
+float: left;
+}
+
+#Open a {
+color:#000000;
+text-decoration:none;
+background:url(images/add.png) left center no-repeat;
+padding-left: 20px;
+border:none;
+}
+
+
+#Open a:hover {
+color:#666666;
+}
+
+
+/****************************** Body  *******************************/
+.NtTab0 .NavBody {
+background-color:#BECEA1;
+}
+
+.NavBody {
+border-color:-moz-use-text-color #000000 #000000;
+border-right:1px solid #000000;
+border-style:none solid solid;
+border-width:0 1px 1px;
+margin:0 auto;
+overflow:hidden;
+clear:both;
+}
+
+/********************left menu **************/
+#ManagerBodyMenu {
+float:left;
+overflow:hidden;
+width:163px;
+background:#C5DEF5;
+}
+
+.NtTab0 .InnerBodyMenu {
+background-position:-978px 0;
+}
+
+.InnerBodyMenu {
+background-image:url("images/tableftbg.gif");
+background-repeat:no-repeat;
+overflow:hidden;
+padding:11px 0 11px 11px;
+}
+
+.NavManagerMenu {
+border-right:1px solid #676767;
+height:auto !important;
+min-height:602px;
+}
+
+/******* Menu Item List *****/
+.menulist li
+{
+	
+}
+
+.menulist li img
+{	
+	position:relative;
+	top:8px;
+}
+
+.menulist li a
+{
+	text-decoration:none;
+	padding:2px;
+}
+
+
+/****************** right frame **************/
+#ManagerBody {
+overflow:hidden;
+}
+
+.InnerBody {
+overflow:hidden;
+padding:11px 11px 11px 0;
+background:#C5DEF5;
+}
+
+#NavManager {
+background:none repeat scroll 0 0 #FFFFFF;
+border-color:#99BBE8 #99BBE8 #99BBE8;
+border-style:solid solid solid none;
+border-width:1px 1px 1px medium;
+overflow:hidden;
+}
+/****************************** Forms *******************************/
+
+ .TxtInput {
+	background:url("images/login_input.gif") repeat-x scroll 0 0 transparent;
+	border:1px solid #BCBCBC;
+	color:#41697E;
+	font-size:12px;
+	font-weight:bold;
+	height:25px;
+	line-height:30px;
+	margin-top:0;
+	padding-left:5px;
+	width:200px;
+}

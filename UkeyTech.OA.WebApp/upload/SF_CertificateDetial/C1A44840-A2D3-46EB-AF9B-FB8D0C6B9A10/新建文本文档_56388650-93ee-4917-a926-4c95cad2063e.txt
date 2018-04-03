@@ -1,0 +1,23 @@
+{{first.DATA}}
+账单日期：{{keyword1.DATA}}
+房租金额：{{keyword2.DATA}}
+水电费用：{{keyword3.DATA}}
+其他费用：{{keyword4.DATA}}
+总金额：{{keyword5.DATA}}
+{{remark.DATA}}
+
+
+17712277943
+
+
+insert into Rent_BillManage(BillID,LesseeManageNo,HouseNo,BillDate,PayStartDate,PayEndDate,EveryPeriodPayRent,CashDeposit
+	,BillStatus,Status,RoomCardDeposit,PeopleNumber)
+	select NEWID() BillID,l.LesseeManageNo,l.HouseNo,
+	dateadd(mm,1,b.BillDate) BillDate,
+	dateadd(mm,1,b.BillDate) PayStartDate,
+	dateadd(DD,-1,dateadd(mm,2,b.BillDate)) PayEndDate,
+	l.EveryPeriodPayRent,0 CashDeposit,'A' BillStatus,'A' Status,0 RoomCardDeposit,l.PeopleNumber
+	from Rent_LesseeManage l inner join Rent_BillManage b on l.LesseeManageNo=b.LesseeManageNo
+	where exists(
+	select top 1 BillID from Rent_BillManage bm where bm.BillID=b.BillID order by b.BillDate desc)
+	and l.LesseeManageNo='102ac3a5-91d3-49d6-93e4-15ecabd4fd7b' 

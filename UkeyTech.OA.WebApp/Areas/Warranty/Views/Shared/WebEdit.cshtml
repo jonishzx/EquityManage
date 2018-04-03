@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>
+        @Clover.Config.WebSiteConfig.Config.WebAppName
+        @ViewBag.Title
+    </title>    
+ 
+    @Styles.Render("~/styles/theme/" + UkeyTech.OA.WebApp.Helper.GetSkin())
+    <link rel="stylesheet" type="text/css" media="screen" href="@Url.Content(" ~/Content/Admin/FONT.css")" />
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.7.2.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/EasyUI/jquery.easyui.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Common.min.js")?v=1.1"></script>
+    <script type="text/javascript" src="@Url.Content(" ~/Scripts/ForBidBackSpace.js")"></script>
+    <script type="text/javascript">
+         if (typeof (Object) === "undefined") {
+             window.location.reload();
+         }
+         var rooturl = "@Clover.Web.Core.Utility.ConvertAbsoulteUrl("~/")";
+         var commonpopupurl = '@Url.Action("PopupSelectView","Utility")';
+    </script>
+
+    @RenderSection("scripts", required: false)
+    
+    <script type="text/javascript">
+        @ViewData["ScriptBlock"]
+    </script>
+</head>
+<body class="easyui-layout" fit="true">
+    @Html.Partial("~/Areas/Warranty/Views/Shared/Loading.cshtml")
+
+    @RenderBody()
+
+    <div id="messagebox">
+        <div id="msgcontent" style="display:none;">
+        </div>
+    </div>
+    @RenderSection("Footer", required: false)
+</body>
+</html>

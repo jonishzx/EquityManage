@@ -1,0 +1,113 @@
+﻿/*table container*/
+#HeaderContainer
+{
+	margin-bottom:20px;
+	}
+#BodyContainer{height:20em;
+	margin-left: 4px;
+	margin-top: 4px;
+}
+.shadow
+{
+position: relative;
+	bottom: 2px;
+	right: 2px;
+	background-color: #666; /*shadow color*/
+}
+
+.contextMenu .edit,#modifymenu .edit{background:url(../images/edit.png)  no-repeat;}
+.contextMenu .delete,#modifymenu .delete{background:url(../images/delete.png)  no-repeat;}
+#modifymenu .action{background:#fff url(../images/copy.png)  no-repeat;}
+#modifymenu a,.selector .functitle {background-position:6px center;
+background-repeat:no-repeat;
+color:#333333;
+height:20px;
+line-height:20px;
+outline-color:-moz-use-text-color;
+outline-style:none;
+outline-width:medium;
+padding:1px 5px 1px 23px;
+text-decoration:none;}
+#modifymenu a{display:block;}
+/*absoulte div*/
+.funcdiv
+{
+	position:absolute;
+	top:inherit;
+	color:white;
+	display:none;
+	width:120px;
+	z-index:99;
+}
+.funcdiv div
+{
+	width:100%;
+	cursor:pointer;
+}
+.selector
+{
+	
+}
+.modifymenu{background:url(../images/edit.png)  no-repeat;
+	background-position:6px center;	
+	padding:1px 1px 1px 1px;}
+.Func{width:50px;}
+/*input*/
+label{font-size:0.9em;color:#2E6E9E;}
+label,.button{cursor:pointer;
+font-size:0.9em;
+overflow:visible;
+width:auto;
+padding:0.2em 1em 0 1em;
+}
+.textbox{font-size:0.9em;       
+overflow:visible;
+width:100px;
+padding:0.2em 0.1em 0 0em;}
+/*link*/
+a{text-decoration: none ;}
+/*table for data main list*/
+.CommmonTbCss 
+{
+	position: relative;
+	bottom: 4px;
+	right: 4px;
+	border-collapse:collapse;
+	font-family:"Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+	font-size:12px;
+	text-align:left;
+	width:100%;
+	padding: .5em 2ex;
+	background-color:#fff;
+}
+.CommmonTbCss th {
+background:#B9C9FE none repeat scroll 0 0;
+border-bottom:1px solid #FFFFFF;
+border-top:4px solid #AABCFE;
+color:#003399;
+font-size:13px;
+font-weight:normal;
+padding:5px;
+font-weight:bold;
+}
+.CommmonTbCss td{
+border-bottom:1px solid #FFFFFF;
+border-top:1px solid transparent;
+padding:2px;
+}
+.CommmonTbCss tr:hover td
+{
+	background: #d0dafd;
+	color: #339;
+}
+tr.odd		{ background:#e8edff none repeat scroll 0 0;}
+tr.highlight,.highlight	{ background:#d0dafd none repeat scroll 0 0;}
+tr.selected		{ background:#5c9ccc  none repeat scroll 0 0;color:#fff;}
+
+/* asp net pager*/
+.AspPager
+{
+	padding:0 0 1em 0;	
+	font-size:0.9em;
+}
+

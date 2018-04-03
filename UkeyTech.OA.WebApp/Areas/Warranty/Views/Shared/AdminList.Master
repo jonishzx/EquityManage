@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="0">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" Visible="false" />
+    <%:Styles.Render("~/styles/theme/" + UkeyTech.OA.WebApp.Helper.GetSkin())%>
+     <script type="text/javascript">
+         if (typeof (Object) === "undefined") {
+             window.location.reload();
+         }
+         var rooturl = '<%= Clover.Web.Core.Utility.ConvertAbsoulteUrl("~/") %>';
+         var commonpopupurl = '<%=Url.Action("PopupSelectView","Utility")%>';
+
+         
+     
+    </script>
+	<script type="text/javascript" src="<%=Url.Content("~/Scripts/jquery-1.7.2.min.js")%>"></script>
+    <script type="text/javascript" src="<%=Url.Content("~/Scripts/EasyUI/jquery.easyui.min.js")%>"></script>    
+    <script type="text/javascript" src="<%=Url.Content("~/Scripts/Common.min.js")%>"></script>
+    <script type="text/javascript" src="<%=Url.Content("~/Scripts/Calendar/WdatePicker.js")%>"></script>
+    <script type="text/javascript" src="<%=Url.Content("~/Scripts/ForBidBackSpace.js")%>"></script>
+    <script type="text/javascript">
+        //全局属性-单元格宽/全局属性-单元格高
+        var gobalgridwidth, gobalgridheight;
+
+        $(document).ready(function () {
+            gobalgridwidth = document.body.clientWidth * 0.99;
+            gobalgridheight = document.body.clientHeight * 0.99;
+
+            if (self.frameElement != undefined) {
+                gobalgridwidth = self.frameElement.clientWidth * 0.97;
+                gobalgridheight = self.frameElement.clientHeight * 0.98 - 80; //"auto";
+            }
+        });
+
+       
+    </script>
+    <asp:ContentPlaceHolder ID="Scripts" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body class="easyui-layout">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="FootBlock" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
+

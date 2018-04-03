@@ -1,0 +1,149 @@
+.header.layout-body {
+    background-color: #CAD5E0;
+    background-image: url("images/header_bg.jpg");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+}
+.header {
+    position: relative;
+}
+.header .sysTitle {
+    float: left;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-right: 40px;
+}
+.header .sysInfo {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.header .sysInfo strong {
+    color: #FF6600;
+}
+.header .sysMenu {
+}
+.header .sysLink {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+.header ul.mainNav {
+    background-repeat: repeat-x;
+    border-bottom: 3px solid #92B3E8;
+    border-top-style: none;
+    border-top-width: 3px;
+    bottom: 3px;
+    height: 26px;
+    left: 0;
+    line-height: 26px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+.header ul.mainNav li {
+    background-color: #FFFFFF;
+    background-image: url("images/datagrid_title_bg.png");
+    background-repeat: repeat-x;
+    border-color: #92B3E8;
+    border-style: solid solid none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-width: 1px;
+    float: left;
+    height: 25px;
+    margin-right: -1px;
+    text-align: center;
+    width: 80px;
+	cursor:pointer;
+}
+.header ul.mainNav li.first {
+    margin-left: 0;
+}
+.header ul.mainNav li.current {
+	background-color: #92B3E8;
+	background-image: none;
+	font-weight: bold;
+	color: #FFF;
+}
+.header ul.mainNav li.current a:link, .header ul.mainNav li.current a:visited {
+    color: #FFFFFF;
+}
+.header ul.mainNav a:link, .header ul.mainNav a:visited {
+    color: #333333;
+}
+.footer.layout-body {
+    background-color: #D2E0F2;
+}
+.footer .left {
+    float: left;
+}
+.footer .right {
+    float: right;
+}
+a:link, a:visited {
+    color: #003399;
+    text-decoration: none;
+}
+a:hover {
+    color: #FF6600;
+}
+.desktop {
+    overflow: hidden;
+}
+.desktop .box {
+    float: left;
+    height: 180px;
+    padding: 0;
+    width: 49%;
+}
+.desktop ul {
+    margin: 0;
+    padding: 0 15px;
+}
+.clear {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+.table td {
+	padding: 3px;
+}
+.homebox {
+	overflow: hidden;
+	zoom:1;
+	width: 850px;
+}
+.homebox .panel {
+	float: left;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.homebox .panel ul {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+}
+.homebox .panel ul li {
+	line-height: 22px;
+	height: 22px;
+}
+.homebox .panel ul li span {
+	float: right;
+}
+body {
+    background-color: #CAD5E0;
+}

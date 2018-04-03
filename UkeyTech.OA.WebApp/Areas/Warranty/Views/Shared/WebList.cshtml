@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/styles/theme/" + UkeyTech.OA.WebApp.Helper.GetSkin())
+    <script type="text/javascript">
+         if (typeof (Object) === "undefined") {
+             window.location.reload();
+         }
+         var rooturl = "@Clover.Web.Core.Utility.ConvertAbsoulteUrl("~/")";
+         var commonpopupurl = '@Url.Action("PopupSelectView","Utility")';
+    </script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.7.2.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/EasyUI/jquery.easyui.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Common.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Calendar/WdatePicker.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/ForBidBackSpace.js")"></script>
+    <script type="text/javascript">
+         //全局属性-单元格宽/全局属性-单元格高
+         var gobalgridwidth, gobalgridheight;
+         $(document).ready(function () {
+             gobalgridwidth = document.body.clientWidth * 0.99;
+             gobalgridheight = document.body.clientHeight * 0.99;
+             if (self.frameElement != undefined) {
+                 gobalgridwidth = self.frameElement.clientWidth * 0.97;
+                 gobalgridheight = self.frameElement.clientHeight * 0.98 - 80; 
+             }
+         });
+    </script>
+    @RenderSection("scripts",required:false)
+</head>
+
+<body class="easyui-layout">
+    @RenderBody()
+    @RenderSection("Footer", required: false)
+</body>
+</html>

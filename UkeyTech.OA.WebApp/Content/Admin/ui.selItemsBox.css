@@ -1,0 +1,58 @@
+﻿
+.SelItemsContainer
+{
+    padding-bottom:0;
+    background:#F7EBAD url(../../images/ui-bg_flat_55_fbec88_40x100.png) repeat-x scroll 50% 50%;
+    border:1px solid #gray;
+    color:#111111;
+    font-family:Segoe UI,Arial,sans-serif;
+    font-weight:bold;
+    width:98%;
+}
+.SelItemsContainer .HeaderContainer
+{
+    background-color:#DEE7F7;
+    padding:0.1em 0.1em 0.1em 0.1em;
+    margin-top:0.2em;
+}
+
+.SelItemsContainer .Header
+{
+
+    background-color:#5A71B5;
+    color :#fff;
+}
+
+.SelItemsContainer .Header .ItemsCount
+{   
+    padding:0 0 0.1em 0.4em;
+    color:Red;
+}
+
+
+.SelItemsContainer .ContentContainer
+{
+    background-color:#C6CBDE;
+    padding:0.2em 0.2em 0.2em 0.2em;
+    margin:0.2em 0 0.2em 0;
+}
+
+.SelItemsContainer .selspan
+{
+
+    margin:0.3em 0.3em 0.3em 0.3em;
+    color:#000; 
+    padding:0 0 0 0.3em;
+}
+
+.SelItemsContainer .selspan a
+{
+    margin-left:0.2em;
+    padding:0 0.3em 0.3em 0.6em;
+    color :#fff;
+    font-size:1.1em;
+    text-decoration:none;
+    width: 16px; height: 16px;
+    background-image: url(../images/icons.gif);
+	background-position: -32px 0;
+}

@@ -1,0 +1,42 @@
+.uploadContainer{
+	margin:10px;
+}
+
+.upload{
+	margin:20 0 0 10px; padding:7px;
+	font-weight:bold; font-size:1em;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	background:#f2f2f2;
+	color:#3366cc;
+	border:1px solid #ccc;
+	width:150px;
+	cursor:pointer !important;
+	-moz-border-radius:5px; -webkit-border-radius:5px;
+}
+.darkbg{
+	background:#ddd !important;
+}
+#status{
+	font-family:Arial; padding:5px;
+}
+.commonfiles{ list-style:none; padding:0; margin:0;width:99%}
+.commonfiles li{ padding:10px; margin-bottom:2px;}
+.commonfiles li img{ max-width:200px; max-height:150px; }
+
+.imgfiles{ list-style:none; padding:0; margin:0; }
+.imgfiles li{ padding:10px; margin-bottom:2px; width:200px; float:left; margin-right:10px;}
+.imgfiles li img{ max-width:200px; max-height:150px; }
+ul .delete
+{
+	margin-left:0.2em;
+    padding:0 0.3em 0.3em 0.6em;
+    color :#fff;
+    font-size:1em;
+    text-decoration:none;
+    width: 16px; height: 16px;
+    background-image: url(../images/icons.gif);
+	background-position: -32px 0;
+}
+.success{ background:#99f099; border:1px solid #339933; }
+.error{ background:#f0c6c3; border:1px solid #cc6622; }

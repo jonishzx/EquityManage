@@ -1,0 +1,79 @@
+﻿.fg-button {
+cursor:pointer;
+margin:0 4px 0 1px;
+outline-color:-moz-use-text-color;
+outline-style:none;
+outline-width:0;
+padding:0.2em;
+position:relative;
+text-align:center;
+text-decoration:none !important;
+font-size:.9em;
+width :60px;
+display:inline-block;
+}
+.fg-button-a
+{
+	margin:0 0 0 0px;
+	position:relative;
+	display:inline-block;
+}
+.fg-button .ui-icon,.fg-button .myui-icon,.fg-button-a .myui-icon{
+left:50%;
+margin-left:-8px;
+margin-top:-8px;
+position:absolute;
+top:50%;
+}
+a.fg-button {
+ /*float:left;*/
+}
+button.fg-button {
+overflow:visible;
+width:auto;
+}
+.fg-button-icon-left {
+padding-left:1.6em;
+}
+.fg-button-icon-right {
+padding-right:1.6em;
+}
+.fg-button-icon-left .ui-icon,.fg-button-icon-left .myui-icon ,.fg-button-a .myui-icon{
+left:0.2em;
+margin-left:0;
+right:auto;
+}
+.fg-button-icon-right .ui-icon {
+left:auto;
+margin-left:0;
+right:0.2em;
+}
+.fg-button-icon-solo {
+display:block;
+text-indent:-9999px;
+width:8px;
+}
+.fg-buttonset {
+float:left;
+}
+.fg-buttonset .fg-button {
+float:left;
+}
+.fg-buttonset-single .fg-button, .fg-buttonset-multi .fg-button {
+margin-right:-1px;
+}
+.fg-toolbar {
+margin:0;
+padding:0.5em;
+}
+.fg-toolbar .fg-buttonset {
+margin-right:1.5em;
+padding-left:1px;
+}
+.fg-toolbar .fg-button {
+font-size:1em;
+}
+
+.strike {
+text-decoration:line-through;
+}

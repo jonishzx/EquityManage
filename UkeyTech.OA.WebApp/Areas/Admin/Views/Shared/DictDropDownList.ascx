@@ -1,0 +1,42 @@
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
+<%@ Import Namespace="UkeyTech.WebFW.DAO" %>
+<%@ Import Namespace="UkeyTech.WebFW.Model" %>
+<%@ Import Namespace="StructureMap" %>
+
+<%if(ViewData.Eval("DictID") != null){
+      var isCombo = ViewData.Eval("Combo") != null && (bool)ViewData.Eval("Combo");
+      var id = ViewData.Eval("ID").ToString();
+      var value = ViewData.Eval("Value") ?? (ViewData.Eval("Default") ?? null);
+      var addempit = ViewData.Eval("AddEmptyItem");
+      string filter = ViewData.Eval("Filter") != null ? ViewData.Eval("Filter").ToString() : null;
+      var enabled = ViewData.Eval("Enabled") == null || (bool)ViewData.Eval("Enabled");
+      if (!enabled) addempit = false;
+%>
+<select id="<%=id%>" class="<%=isCombo ? "\"easyui-combobox\"" : ""%> <%=ViewData.Eval("Required") != null && (bool)ViewData.Eval("Required") ? "easyui-validatebox":""%>" 
+    <%=ViewData.Eval("Attr")%>
+    <%=ViewData.Eval("Required") != null && (bool)ViewData.Eval("Required") ? "required=\"true\"" : ""%>
+     name="<%=id %>"  
+    style="width:<%=ViewData.Eval("width") != null?ViewData.Eval("width").ToString():"100"%>px !important;border: 1px solid #82a6c4;">
+    <%if (addempit != null && (bool)addempit)
+      {%><option value='' <%= (value == null || string.IsNullOrEmpty(value.ToString())) ? "selected=selected" : "" %>></option>
+    <%} %>
+    <%
+        var dictitemDAO = ObjectFactory.GetInstance<DictItemDAO>();
+        var rst = dictitemDAO.GetListByDictID(ViewData.Eval("DictID").ToString());
+        foreach (var m in rst)
+        {
+            if ((!enabled && value == null) || (!enabled && value != null && value.ToString() != m.Code)
+                || (filter != null && m.Code == filter))
+                continue;
+
+            
+    %><option value='<%= isCombo ? m.Name : m.Code%>' <%=(value!=null && value.ToString() == m.Code) ? "selected=\"selected\"" : "" %>><%=m.Name%></option>
+    <%}%>
+</select>
+    <% if (!enabled)
+       { %>
+    <script>
+        setSelectReadonly($(<%= id %>));
+    </script>
+    <% } %>
+<%} %>

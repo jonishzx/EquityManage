@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Register Src="../Shared/Loading.ascx" TagName="Loading" TagPrefix="ld" %>
+<%@ Register src="../Shared/ScriptBlock.ascx" tagname="ScriptBlock" tagprefix="uc1" %>
+<%@ Register Src="../Shared/AllScript.ascx" TagName="AllScript" TagPrefix="as" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="0">
+    <title>
+        <%=Clover.Config.WebSiteConfig.Config.WebAppName%><asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <script type="text/javascript" src="<%=Url.Content("~/Scripts/ForBidBackSpace.js")%>"></script>
+     <script type="text/javascript">
+         if (typeof (Object) === "undefined") {
+             window.location.reload();
+         }
+         var rooturl = '<%= Clover.Web.Core.Utility.ConvertAbsoulteUrl("~/") %>';
+         var commonpopupurl = '<%=Url.Action("PopupSelectView","Utility")%>';
+
+    </script>
+    <as:AllScript ID="AllScriptBlock" runat="server"/>
+    <asp:ContentPlaceHolder ID="Script" runat="server">
+    </asp:ContentPlaceHolder>
+    <uc1:ScriptBlock ID="ScriptBlockA" runat="server" />
+</head>
+<body class="easyui-layout" fit="true">
+    <ld:Loading ID="Loading1" runat="server" />
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <div id="messagebox">
+        <div id="msgcontent" style="display:none;">     
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="FootBlock" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+
+</html>

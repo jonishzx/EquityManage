@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "系统公告列表";
+    Layout = "~/Areas/Warranty/Views/Shared/WebList.cshtml";
+}
+@section scripts{
+    <script type="text/javascript">
+        document.onkeydown = function (evt) {
+            var evt = window.event ? window.event : evt;
+            var targetId = (evt.target) ? evt.target.id : evt.srcElement.id;
+            if (evt.keyCode == 13) {
+                $("btnSubmit").click();
+            }
+        };
+    </script>
+}
+
+<div class="SearchDiv queryarea" region="north">
+    <fieldset class="newfield">
+        <legend style="font-weight: bold;">检索条件</legend>
+        <table class="searchTb" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="ser_l">
+                    <label for="SupplierId">供应商编码：</label>
+                </td>
+                <td>
+                    <input id="SupplierId" name="SupplierId" type="text" class="form-item-text" value="" maxlength="70" />
+                </td>
+                <td class="ser_l">
+                    <label for="SupplierName">供应商名称：</label>
+                </td>
+                <td>
+                    <input id="SupplierName" name="SupplierName" type="text" class="form-item-text" value="" maxlength="70" />
+                </td>
+                <td class="ser_l">
+                    <label for="Contract">日常联系人：</label>
+                </td>
+                <td>
+                    <input id="Contract" name="Contract" type="text" class="form-item-text" value="" maxlength="70" />
+                </td>
+                <td class="ser_l">
+                    <label for="Contract">是否：</label>
+                </td>
+                <td>
+                    @{Html.RenderPartial("~/Areas/Warranty/Views/Shared/DictDropDownList.cshtml",
+                    new ViewDataDictionary(new
+                    {
+                        ID = "EnergyCondition",
+                        DictID = "YesOrNo",
+                        TextField = "EnergyConditionName",
+                        Width = "100",
+                        AddEmptyItem = true
+                    }));}
+                </td>
+            </tr>
+        </table>
+        <div class="searchBtn" style="margin-top: -30px">
+            <a href="javascript:void(0);" class="easyui-linkbutton" icon="icon-search" id="btnSubmit" onclick="LoadBizDataGrid();">查询</a>
+        </div>
+    </fieldset>
+</div>
+
+<div id="center" region="center" style="width: auto;">
+    <table id="tbGrid"></table>
+</div>
+
+<script type="text/javascript">
+        var baseurl = '@Url.Action("","Base")';
+        var listurl = baseurl + "/GetSupplierList";
+</script>
+<script type="text/javascript">
+        var hiddenId = null;
+        var permission;
+        $(document).ready(function () {
+            //权限获取
+            LoadPageModuleFunction("Article",
+                function () {
+                    loadDictItems("", init);
+                });
+        });
+
+        function init() {
+            permission = { Create: true, Edit: true, Delete: true };
+            LoadBizDataGrid();
+        }
+
+        function LoadBizDataGrid() {
+            LoadGrid();
+        }
+
+        var columns = [
+            { field: 'SupplierId', title: '供应商编码', width: 80, align: 'left', sortable: true },
+            { field: 'SupplierName', title: '供应商名称', width: 200, align: 'left', sortable: true },
+            { field: 'Contract', title: '日常联系人', width: 70, align: 'left', sortable: true },
+            { field: 'Email', title: 'Email', width: 140, align: 'left', sortable: true },
+            { field: 'Phone', title: '联系电话', width: 100, align: 'left', sortable: true }
+        ];
+
+        function LoadGrid(code, where) {
+            $('#tbGrid').datagrid({
+                nowrap: false,
+                striped: true,
+                fit: true,
+                border: false,
+                url: listurl,
+                queryParams: getQueryParams(),
+                columns: [columns],
+                pagination: true,
+                pageSize: '50',
+                pageList: [30, 50, 100, 200, 300],
+                rownumbers: true,
+                pageNumber: 1,
+                singleSelect: true,
+                remoteSort: false,
+                onBeforeLoad: function () {
+                    RemoveForbidButton();
+                }
+            });
+        }
+        function refresh() {
+            LoadBizDataGrid();
+        }
+</script>
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#customform.title}</title>
+    <script type="text/javascript" src="../../../../jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/customform.js"></script>
+    <style type="text/css">
+        *{font-size:12px;}
+        #FormName{font-weight:bold;font-size:13px;}
+        .DataField{background-color:#f0f0f0;margin:5px;border:solid 1px gray;padding:2px;cursor:pointer;display:block;float:left;    }
+        .DataField:hover{color:blue;}
+        fieldset,mceActionPanel{clear:both;}
+        #currentField{float:left;}
+    </style>
+</head>
+<body>
+
+<form onsubmit="CustomFormDialog.insert();return false;" action="#">
+    <p><span id="FormName"></span>-{#customform.header}</p>
+
+	<div>
+		
+		<p>
+            <fieldset>
+			<legend>{#customform.hasselected}</legend>
+			<div id="hasSelected">
+				fields
+			</div>
+            </fieldset>
+		</p>
+        <p>
+            <fieldset>
+			<legend>{#customform.canselected}</legend>
+			<div id="selectFields">
+				fields
+			</div>
+            </fieldset>
+		</p>
+	</div>
+	<div style='clear:both'></div>
+	<p>
+		<div style="float:left;padding:10px 0;">{#customform.currselected}:</div>
+		<div id="currentField">
+		</div>
+        <div style='clear:both;'></div>
+	</p>
+	<div class="mceActionPanel">
+		<input type="button" id="insert" name="insert" value="{#insert}" onclick="CustomFormDialog.insert();" />
+		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+	</div>
+</form>
+
+</body>
+</html>
