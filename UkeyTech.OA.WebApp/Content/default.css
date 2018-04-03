@@ -12,9 +12,6 @@
     border: 0;
 }
 
-.layout-body .header, .header {
-}
-
 .field-validation-error {
     display: block;
     color: Red;

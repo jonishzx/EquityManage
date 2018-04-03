@@ -12,8 +12,6 @@
     border: 0;
 }
 
-.layout-body .header, .header {
-}
 
 span.print {
     font-size: 13px !important;
@@ -1887,24 +1885,18 @@ h4 {
     width: 100px;
 }
 
-/*.searchTb TD {
-    padding-bottom: 3px;
-}*/
-
 .searchTb td {
     padding-bottom: 3px;
     padding-left: 3px;
 }
 
 .ser_l {
-    /*width: 80px;*/
     text-align: right;
-    /*vertical-align: middle;*/
 }
 
 .layout-split-west {
-    border-left: 0 solid #C5D5EE;
-    border-right: 3px solid #B9C6DA !important;
+    /*border-left: 0 solid #C5D5EE;*/
+    border-right: 3px solid #f1f3f5 !important;
 }
 
 .layout-split-east {

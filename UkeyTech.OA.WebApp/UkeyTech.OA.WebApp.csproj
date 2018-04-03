@@ -174,9 +174,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\libs\Base\UkeyTech.OA.WebApp.Admin.dll</HintPath>
     </Reference>
-    <Reference Include="UkeyTech.WebOA.AutomationTask">
-      <HintPath>..\libs\Base\UkeyTech.WebOA.AutomationTask.dll</HintPath>
-    </Reference>
     <Reference Include="WebGrease">
       <HintPath>..\libs\WebGrease.dll</HintPath>
     </Reference>
@@ -1914,9 +1911,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\uploader_styles\images\" />
     <Folder Include="Properties\PublishProfiles\" />
-    <Folder Include="Scripts\EasyUI\themes\skin_3\images\" />
-    <Folder Include="Scripts\EasyUI\themes\skin_4\images\" />
-    <Folder Include="Scripts\EasyUI\themes\skin_5\images\" />
     <Folder Include="Scripts\jscripts\tiny_mce\plugins\autosave\images\" />
   </ItemGroup>
   <ItemGroup>
