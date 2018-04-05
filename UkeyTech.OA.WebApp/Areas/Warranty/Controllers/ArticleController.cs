@@ -14,7 +14,8 @@ namespace UkeyTech.OA.WebApp.Areas.Warranty.Controllers
        /// <returns></returns>
 
         public ActionResult Index()
-        {      
+        {
+            var a = 0;
             return View();
         }
 
