@@ -8,8 +8,10 @@ namespace UkeyTech.OA.WebApp.Areas.Warranty.Controllers
 {
     public class ArticleController : Controller
     {
-        //
-        // GET: /Article/
+       /// <summary>
+       /// 我在测试操作。
+       /// </summary>
+       /// <returns></returns>
 
         public ActionResult Index()
         {      
