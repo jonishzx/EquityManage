@@ -784,7 +784,6 @@
     <Content Include="Content\uploader_styles\ssi-uploader.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="ModuleJs\Base\ProjectPermit.js" />
     <Content Include="ModuleJs\Permission\RolePermissionTree.js" />
     <Content Include="ModuleJs\WorkFlow\UserBizAssignForAdmin.js" />
     <Content Include="ModuleJs\Permission\RolePermission.js" />
@@ -792,7 +791,6 @@
     <Content Include="ModuleJs\WorkFlow\jquery.edatagrid.js" />
     <Content Include="ModuleJs\WorkFlow\UserCalendar.js" />
     <Content Include="Scripts\ajaxupload.3.5.js" />
-    <Content Include="Scripts\baiduTemplate.js" />
     <Content Include="Scripts\blank.gif" />
     <Content Include="Scripts\Calendar\calendar.js" />
     <Content Include="Scripts\Calendar\config.js" />
@@ -808,51 +806,6 @@
     <Content Include="Scripts\Calendar\skin\whyGreen\datepicker.css" />
     <Content Include="Scripts\Calendar\skin\whyGreen\img.gif" />
     <Content Include="Scripts\Calendar\WdatePicker.js" />
-    <Content Include="Scripts\colorbox\colorbox.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-ar.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-bg.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-ca.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-cs.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-da.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-de.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-es.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-et.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-fa.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-fi.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-fr.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-gl.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-gr.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-he.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-hr.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-hu.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-id.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-it.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-ja.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-kr.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-lv.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-nl.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-no.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-pl.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-pt-br.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-ro.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-ru.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-si.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-sk.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-sr.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-sv.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-tr.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-uk.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-zh-CN.js" />
-    <Content Include="Scripts\colorbox\i18n\jquery.colorbox-zh-TW.js" />
-    <Content Include="Scripts\colorbox\images\border.png" />
-    <Content Include="Scripts\colorbox\images\controls.png" />
-    <Content Include="Scripts\colorbox\images\loading.gif" />
-    <Content Include="Scripts\colorbox\images\loading_background.png" />
-    <Content Include="Scripts\colorbox\images\overlay.png" />
-    <Content Include="Scripts\colorbox\jquery.colorbox-min.js" />
-    <Content Include="Scripts\colorbox\jquery.colorbox.js" />
     <Content Include="ModuleJs\home.js" />
     <Content Include="Scripts\Common.js" />
     <Content Include="Scripts\Common.min.js" />
@@ -1417,23 +1370,17 @@
     <Content Include="Scripts\EasyUI\themes\skin_2\images\validatebox_pointer_top.gif" />
     <Content Include="Scripts\EasyUI\themes\skin_2\images\validatebox_warning.png" />
     <Content Include="Scripts\excanvas.js" />
-    <Content Include="Scripts\FixedHeaderColumns.min.js" />
     <Content Include="Scripts\fullcalendar\fullcalendar.min.css" />
     <Content Include="Scripts\fullcalendar\fullcalendar.min.js" />
     <Content Include="Scripts\fullcalendar\fullcalendar.print.css" />
     <Content Include="Scripts\fullcalendar\lang\zh-cn.js" />
     <Content Include="Scripts\fullcalendar\moment.min.js" />
-    <Content Include="Scripts\iepngfix.htc" />
-    <Content Include="Scripts\iepngfix_tilebg.js" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="Scripts\jquery-1.7.2.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
-    <Content Include="Scripts\jquery.bgiframe.min.js" />
-    <Content Include="Scripts\jquery.bt.min.js" />
-    <Content Include="Scripts\jquery.cluetip.all.min.js" />
     <Content Include="Scripts\jquery.cookie.js" />
     <Content Include="Scripts\jquery.dataTables.min.js" />
     <Content Include="Scripts\jquery.enlarge.min.js" />
@@ -1441,7 +1388,6 @@
     <Content Include="Scripts\jquery.jqpagination.min.js" />
     <Content Include="Scripts\jquery.Print.js" />
     <Content Include="Scripts\jquery.scrollTo.min.js" />
-    <Content Include="Scripts\jquery.textchange.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
@@ -1756,7 +1702,6 @@
     <Content Include="Scripts\jscripts\tiny_mce\utils\form_utils.js" />
     <Content Include="Scripts\jscripts\tiny_mce\utils\mctabs.js" />
     <Content Include="Scripts\jscripts\tiny_mce\utils\validate.js" />
-    <Content Include="Scripts\jsedit.js" />
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
@@ -1797,95 +1742,9 @@
     <Content Include="ModuleJs\WorkFlow\UserProcessMgmt.js" />
     <Content Include="ModuleJs\WorkFlow\WorkFlowProcess.js" />
     <Content Include="ModuleJs\WorkFlow\WorkItems.js" />
-    <Content Include="Scripts\Openlayers\geometricRendering.js" />
-    <Content Include="Scripts\Openlayers\intersectsMoth.js" />
-    <Content Include="Scripts\Openlayers\ol\control\layerscontrol.js" />
-    <Content Include="Scripts\Openlayers\ol\control\mousepositioncontrol-.js" />
-    <Content Include="Scripts\Openlayers\ol\ol-debug.js" />
-    <Content Include="Scripts\Openlayers\ol\ol.css" />
-    <Content Include="Scripts\Openlayers\ol\ol.js" />
-    <Content Include="Scripts\Openlayers\ol\proj4.js" />
-    <Content Include="Scripts\Openlayers\ol\source\imagewcssource.js" />
-    <Content Include="Scripts\Openlayers\ol\source\副本 imagewmssource.js" />
-    <Content Include="Scripts\Openlayers\intersectsMoth.css" />
-    <Content Include="Scripts\plupload\browserplus-min.js" />
-    <Content Include="Scripts\plupload\i18n\ar.js" />
-    <Content Include="Scripts\plupload\i18n\bs.js" />
-    <Content Include="Scripts\plupload\i18n\ca.js" />
-    <Content Include="Scripts\plupload\i18n\cs.js" />
-    <Content Include="Scripts\plupload\i18n\cy.js" />
-    <Content Include="Scripts\plupload\i18n\da.js" />
-    <Content Include="Scripts\plupload\i18n\de.js" />
-    <Content Include="Scripts\plupload\i18n\el.js" />
-    <Content Include="Scripts\plupload\i18n\en.js" />
-    <Content Include="Scripts\plupload\i18n\es.js" />
-    <Content Include="Scripts\plupload\i18n\et.js" />
-    <Content Include="Scripts\plupload\i18n\fa.js" />
-    <Content Include="Scripts\plupload\i18n\fi.js" />
-    <Content Include="Scripts\plupload\i18n\fr.js" />
-    <Content Include="Scripts\plupload\i18n\he.js" />
-    <Content Include="Scripts\plupload\i18n\hr.js" />
-    <Content Include="Scripts\plupload\i18n\hu.js" />
-    <Content Include="Scripts\plupload\i18n\hy.js" />
-    <Content Include="Scripts\plupload\i18n\id.js" />
-    <Content Include="Scripts\plupload\i18n\it.js" />
-    <Content Include="Scripts\plupload\i18n\ja.js" />
-    <Content Include="Scripts\plupload\i18n\ka.js" />
-    <Content Include="Scripts\plupload\i18n\kk.js" />
-    <Content Include="Scripts\plupload\i18n\ko.js" />
-    <Content Include="Scripts\plupload\i18n\lt.js" />
-    <Content Include="Scripts\plupload\i18n\lv.js" />
-    <Content Include="Scripts\plupload\i18n\nl.js" />
-    <Content Include="Scripts\plupload\i18n\pl.js" />
-    <Content Include="Scripts\plupload\i18n\pt_BR.js" />
-    <Content Include="Scripts\plupload\i18n\ro.js" />
-    <Content Include="Scripts\plupload\i18n\ru.js" />
-    <Content Include="Scripts\plupload\i18n\sk.js" />
-    <Content Include="Scripts\plupload\i18n\sr.js" />
-    <Content Include="Scripts\plupload\i18n\sv.js" />
-    <Content Include="Scripts\plupload\i18n\th_TH.js" />
-    <Content Include="Scripts\plupload\i18n\tr.js" />
-    <Content Include="Scripts\plupload\i18n\uk_UA.js" />
-    <Content Include="Scripts\plupload\i18n\zh_CN.js" />
-    <Content Include="Scripts\plupload\i18n\zh_TW.js" />
-    <Content Include="Scripts\plupload\jquery.plupload.queue\css\jquery.plupload.queue.css" />
-    <Content Include="Scripts\plupload\jquery.plupload.queue\img\backgrounds.gif" />
-    <Content Include="Scripts\plupload\jquery.plupload.queue\img\buttons-disabled.png" />
-    <Content Include="Scripts\plupload\jquery.plupload.queue\img\buttons.png" />
-    <Content Include="Scripts\plupload\jquery.plupload.queue\img\delete.gif" />
-    <Content Include="Scripts\plupload\jquery.plupload.queue\img\done.gif" />
-    <Content Include="Scripts\plupload\jquery.plupload.queue\img\error.gif" />
-    <Content Include="Scripts\plupload\jquery.plupload.queue\img\throbber.gif" />
-    <Content Include="Scripts\plupload\jquery.plupload.queue\img\transp50.png" />
     <Content Include="Scripts\jquery-ui.min.js" />
-    <Content Include="Scripts\plupload\jquery.plupload.queue\jquery.plupload.queue.js" />
-    <Content Include="Scripts\plupload\jquery.plupload.queue\jquery.plupload.queue.min.js" />
-    <Content Include="Scripts\plupload\jquery.ui.plupload\css\jquery.ui.plupload.css" />
-    <Content Include="Scripts\plupload\jquery.ui.plupload\img\loading.gif" />
-    <Content Include="Scripts\plupload\jquery.ui.plupload\img\plupload.png" />
-    <Content Include="Scripts\plupload\jquery.ui.plupload\jquery.ui.plupload.js" />
-    <Content Include="Scripts\plupload\jquery.ui.plupload\jquery.ui.plupload.min.js" />
-    <Content Include="Scripts\plupload\moxie.js" />
-    <Content Include="Scripts\plupload\moxie.min.js" />
-    <Content Include="Scripts\plupload\Moxie.swf" />
-    <Content Include="Scripts\plupload\Moxie.xap" />
-    <Content Include="Scripts\plupload\plupload.dev.js" />
-    <Content Include="Scripts\plupload\plupload.full.min.js" />
-    <Content Include="Scripts\plupload\plupload.min.js" />
-    <Content Include="Scripts\pngfix.js" />
     <Content Include="Scripts\PopupSelectGrid.js" />
-    <Content Include="Scripts\ssi-uploader.js" />
-    <Content Include="Scripts\swfobject.js" />
     <Content Include="Scripts\VCode.js" />
-    <Content Include="Scripts\webupload\css\webuploader.css" />
-    <Content Include="Scripts\webupload\dist\Uploader.swf" />
-    <Content Include="Scripts\webupload\dist\webuploader.css" />
-    <Content Include="Scripts\webupload\dist\webuploader.js" />
-    <Content Include="Scripts\webupload\dist\webuploader.min.js" />
-    <Content Include="Scripts\webupload\image\bg.png" />
-    <Content Include="Scripts\webupload\image\style.css" />
-    <Content Include="Scripts\webupload\image\upload.js" />
-    <Content Include="Scripts\ZeroClipboard.swf" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Scripts\ForBidBackSpace.js" />
     <Content Include="Tools\ProcessInfo.aspx" />
@@ -1978,16 +1837,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UkeyTech.OA.Warranty\UkeyTech.OA.Warranty.csproj">
-      <Project>{fcb413ef-5874-4f7a-a0d9-7aaf24c389a2}</Project>
-      <Name>UkeyTech.OA.Warranty</Name>
-    </ProjectReference>
-    <ProjectReference Include="Areas\Warranty\UkeyTech.OA.WebApp.Warranty.csproj">
-      <Project>{fc384a28-0fea-4333-bc7d-f23c51e6ea10}</Project>
-      <Name>UkeyTech.OA.WebApp.Warranty</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
