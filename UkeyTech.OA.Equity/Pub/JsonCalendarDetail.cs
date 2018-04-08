@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 
-namespace UkeyTech.OA.Warranty.Pub
+namespace UkeyTech.OA.Equity.Pub
 {
     #region json化日期明细
     public class JsonCalendarDetail

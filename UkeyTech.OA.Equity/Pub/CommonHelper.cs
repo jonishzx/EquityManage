@@ -1,6 +1,6 @@
 ﻿using Clover.Data;
 
-namespace UkeyTech.OA.Warranty.DAO
+namespace UkeyTech.OA.Equity.DAO
 {
     using System.Collections.Generic;
     using System.Data;

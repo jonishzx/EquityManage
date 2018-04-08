@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{416554E8-924E-44B8-B57C-44EDA46B4E8A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UkeyTech.OA.FrameWork</RootNamespace>
+    <AssemblyName>UkeyTech.OA.FrameWork</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Clover.Component.Excel">
+      <HintPath>..\libs\Clover.Component.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Clover.Config">
+      <HintPath>..\libs\Clover.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Clover.Core">
+      <HintPath>..\libs\Clover.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Clover.Data">
+      <HintPath>..\libs\Clover.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Clover.Web.Core">
+      <HintPath>..\libs\Clover.Web.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper">
+      <HintPath>..\libs\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper.Contrib">
+      <HintPath>..\libs\Dapper.Contrib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.8.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\libs\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomForm\DataAccess\Form.cs" />
+    <Compile Include="CustomForm\DataAccess\FormColumn.cs" />
+    <Compile Include="CustomForm\Model\Form.cs" />
+    <Compile Include="CustomForm\Model\FormColumn.cs" />
+    <Compile Include="Framework\DataAccess\WFAdminAssign.cs" />
+    <Compile Include="Framework\DataAccess\ApproveInfo.cs" />
+    <Compile Include="Framework\DataAccess\Attachment.cs" />
+    <Compile Include="Framework\DataAccess\BilNo.cs" />
+    <Compile Include="Framework\DataAccess\BusiBilNo.cs" />
+    <Compile Include="Framework\DataAccess\System\Admin.cs" />
+    <Compile Include="Framework\DataAccess\System\AutoNumber.cs" />
+    <Compile Include="Framework\DataAccess\System\Const.cs" />
+    <Compile Include="Framework\DataAccess\System\DBBackup.cs" />
+    <Compile Include="Framework\DataAccess\System\Dictionary.cs" />
+    <Compile Include="Framework\DataAccess\System\DictItem.cs" />
+    <Compile Include="Framework\DataAccess\System\OPLog.cs" />
+    <Compile Include="Framework\DataAccess\System\ResourcePath.cs" />
+    <Compile Include="Framework\DataAccess\System\Widget.cs" />
+    <Compile Include="Framework\DataAccess\User.cs" />
+    <Compile Include="Framework\DataAccess\UserConfig.cs" />
+    <Compile Include="Framework\DataAccess\UserVisitLog.cs" />
+    <Compile Include="Framework\Model\ApproveInfo.cs" />
+    <Compile Include="Framework\Model\AssignUser.cs" />
+    <Compile Include="Framework\Model\Attachment.cs" />
+    <Compile Include="Framework\Model\InvokeResult.cs" />
+    <Compile Include="Framework\Model\System\Admin.cs" />
+    <Compile Include="Framework\Model\System\AutoNumber.cs" />
+    <Compile Include="Framework\Model\System\Const.cs" />
+    <Compile Include="Framework\Model\System\DBBackup.cs" />
+    <Compile Include="Framework\Model\System\Dictionary.cs" />
+    <Compile Include="Framework\Model\System\DictItem.cs" />
+    <Compile Include="Framework\Model\System\OPLog.cs" />
+    <Compile Include="Framework\Model\System\ResourcePath.cs" />
+    <Compile Include="Framework\Model\System\Widget.cs" />
+    <Compile Include="Framework\Model\User.cs" />
+    <Compile Include="Framework\Model\UserConfig.cs" />
+    <Compile Include="Framework\Model\UserVisitLog.cs" />
+    <Compile Include="Framework\OnLineList\OnlineListDAO.cs" />
+    <Compile Include="Framework\OnLineList\OnlineListModel.cs" />
+    <Compile Include="Mail\DataAccess\CReceiver.cs" />
+    <Compile Include="Mail\DataAccess\FContent.cs" />
+    <Compile Include="Mail\DataAccess\MAttachment.cs" />
+    <Compile Include="Mail\Model\CReceiver.cs" />
+    <Compile Include="Mail\Model\FContent.cs" />
+    <Compile Include="Mail\Model\MAttachment.cs" />
+    <Compile Include="Message\DataAccess\BoxMessage.cs" />
+    <Compile Include="Message\DataAccess\Message.cs" />
+    <Compile Include="Message\DataAccess\MessageBox.cs" />
+    <Compile Include="Message\DataAccess\MessageTemplate.cs" />
+    <Compile Include="Message\Model\BoxMessage.cs" />
+    <Compile Include="Message\Model\Message.cs" />
+    <Compile Include="Message\Model\MessageBox.cs" />
+    <Compile Include="Message\Model\MessageTemplate.cs" />
+    <Compile Include="MVCControls\Repeater.cs" />
+    <Compile Include="MVCExntestion\AdminBaseController.cs" />
+    <Compile Include="MVCExntestion\AdminErrorHandleAttribute.cs" />
+    <Compile Include="MVCExntestion\AdminLoginController.cs" />
+    <Compile Include="MVCExntestion\AdvSearch.cs" />
+    <Compile Include="MVCExntestion\BarCode128.cs" />
+    <Compile Include="MVCExntestion\CloverAuthorizeAttribute.cs" />
+    <Compile Include="MVCExntestion\CustomErrorAttribute.cs" />
+    <Compile Include="MVCExntestion\CustomRouting.cs" />
+    <Compile Include="MVCExntestion\EnchanceViewPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVCExntestion\Helper.cs" />
+    <Compile Include="MVCExntestion\IdentityCard.cs" />
+    <Compile Include="MVCExntestion\OnlineHandler.cs" />
+    <Compile Include="MVCExntestion\TemplateHelper.cs" />
+    <Compile Include="MVCExntestion\TreeRender.cs" />
+    <Compile Include="MVCExntestion\BarCode.cs" />
+    <Compile Include="Permission\BusinessAPI\FuncPermissionBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\FunctionBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\FunctionDataRuleBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\GroupBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\GroupRoleBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\GroupUserBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\ModuleBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\ModuleFunctionBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\PMSystemBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\PositionBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\PositionUserBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\RoleBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\RoleUserBLL.cs" />
+    <Compile Include="Permission\BusinessAPI\Util.cs" />
+    <Compile Include="Permission\Config\PermissionConfig.cs" />
+    <Compile Include="Permission\Config\PermissionConfigInfo.cs" />
+    <Compile Include="Permission\Config\PermissionManager.cs" />
+    <Compile Include="Permission\Config\PMConfigInfo.cs" />
+    <Compile Include="Permission\DataAccess\CommandUserDAO.cs" />
+    <Compile Include="Permission\DataAccess\FuncPermission.cs" />
+    <Compile Include="Permission\DataAccess\Function.cs" />
+    <Compile Include="Permission\DataAccess\FunctionDataRule.cs" />
+    <Compile Include="Permission\DataAccess\Group.cs" />
+    <Compile Include="Permission\DataAccess\GroupRole.cs" />
+    <Compile Include="Permission\DataAccess\GroupUser.cs" />
+    <Compile Include="Permission\DataAccess\Log.cs" />
+    <Compile Include="Permission\DataAccess\Module.cs" />
+    <Compile Include="Permission\DataAccess\ModuleFunction.cs" />
+    <Compile Include="Permission\DataAccess\PMSystem.cs" />
+    <Compile Include="Permission\DataAccess\Position.cs" />
+    <Compile Include="Permission\DataAccess\PositionUser.cs" />
+    <Compile Include="Permission\DataAccess\Role.cs" />
+    <Compile Include="Permission\DataAccess\RoleUser.cs" />
+    <Compile Include="Permission\Enum.cs" />
+    <Compile Include="Permission\Model\FuncPermission.cs" />
+    <Compile Include="Permission\Model\Function.cs" />
+    <Compile Include="Permission\Model\FunctionDataRule.cs" />
+    <Compile Include="Permission\Model\Group.cs" />
+    <Compile Include="Permission\Model\GroupRole.cs" />
+    <Compile Include="Permission\Model\GroupUser.cs" />
+    <Compile Include="Permission\Model\Log.cs" />
+    <Compile Include="Permission\Model\Module.cs" />
+    <Compile Include="Permission\Model\ModuleFunction.cs" />
+    <Compile Include="Permission\Model\PMSystem.cs" />
+    <Compile Include="Permission\Model\Position.cs" />
+    <Compile Include="Permission\Model\PositionMaster.cs" />
+    <Compile Include="Permission\Model\PositionUser.cs" />
+    <Compile Include="Permission\Model\Role.cs" />
+    <Compile Include="Permission\Model\RoleUser.cs" />
+    <Compile Include="Permission\Model\User.cs" />
+    <Compile Include="Permission\Model\UserFuncPMResult.cs" />
+    <Compile Include="Permission\PermissionAPI.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\DataAccess\ReportSetting.cs" />
+    <Compile Include="Report\Model\ReportSetting.cs" />
+    <Compile Include="Task\Mail\MailQueue.cs" />
+    <Compile Include="Task\Mail\MailQueueModel.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

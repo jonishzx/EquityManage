@@ -58,33 +58,31 @@ namespace UkeyTech.OA.WebApp
              
             */
 
-            bundles.Add(new ScriptBundle("~/bundles/attachment").Include(                                                      
-                    "~/Scripts/colorbox/jquery.colorbox-min.js",
-                    "~/Scripts/colorbox/i18n/jquery.colorbox-zh-CN.js"));
+            //bundles.Add(new ScriptBundle("~/bundles/attachment").Include(                                                      
+            //        "~/Scripts/colorbox/jquery.colorbox-min.js",
+            //        "~/Scripts/colorbox/i18n/jquery.colorbox-zh-CN.js"));
 
-            bundles.Add(new StyleImagePathBundle("~/styles/attachment").Include(
-               "~/Scripts/colorbox/colorbox.css"
-            ));           
+            //bundles.Add(new StyleImagePathBundle("~/styles/attachment").Include(
+            //   "~/Scripts/colorbox/colorbox.css"
+            //));           
 
-            bundles.Add(new ScriptBundle("~/bundles/upload").Include(
-                    "~/Scripts/jquery-1.7.2.min.js",     
-                    "~/Scripts/jquery-ui.min.js",
-                     "~/Scripts/plupload/plupload.full.min.js",                    
-                     "~/Scripts/plupload/i18n/zh_CN.js"));
+            //bundles.Add(new ScriptBundle("~/bundles/upload").Include(
+            //        "~/Scripts/jquery-1.7.2.min.js",     
+            //        "~/Scripts/jquery-ui.min.js",
+            //         "~/Scripts/plupload/plupload.full.min.js",                    
+            //         "~/Scripts/plupload/i18n/zh_CN.js"));
 
-            bundles.Add(new StyleImagePathBundle("~/styles/upload").Include(
-               "~/Scripts/plupload/jquery.ui.plupload/css/jquery.ui.plupload.css",
-               "~/Content/jquery-ui.min.css"
-               ));
+            //bundles.Add(new StyleImagePathBundle("~/styles/upload").Include(
+            //   "~/Scripts/plupload/jquery.ui.plupload/css/jquery.ui.plupload.css",
+            //   "~/Content/jquery-ui.min.css"
+            //   ));
 
-            string currdefaultCSS = UkeyTech.OA.WebApp.Helper.GetDefaultStyleSheet();
-            for(var i = 0; i< 3; i++){
-                bundles.Add(new StyleImagePathBundle("~/styles/theme/skin_" + i.ToString()).Include(
-               "~/Scripts/EasyUI/themes/skin_" + i.ToString() + "/easyui.css",
+            string currdefaultCSS = Helper.GetDefaultStyleSheet();
+            bundles.Add(new StyleImagePathBundle("~/styles/theme/skin_0")
+              .Include("~/Scripts/EasyUI/themes/skin_0/easyui.css",
                currdefaultCSS,
                "~/Scripts/EasyUI/themes/icon.css"));
-            }
-         
+
             BundleTable.EnableOptimizations = true;
         }
     }

@@ -26,7 +26,7 @@
             查询</a>
     </div>--%>
     <div class="easyui-layout">
-        <div id="west" region="west" split="true" title="角色树" style="width: 10px;">
+        <div id="west" region="west" split="true" title="系统角色" style="width: 10px;">
             <ul id="treeRole">
             </ul>
         </div>

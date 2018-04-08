@@ -13,7 +13,7 @@
         var GroupPositionUrl = '<%=Url.Action("UserGroupPositionListWithAdminId","Account")%>';
         var GroupPositionPostUrl = '<%=Url.Action("SetDefaultUserGroupPositionWithAdminId","Account")%>';
     </script>
-    <script type="text/javascript" src="<%=Url.Content("~/ModuleJs/Permission/Account.js")%>"></script>
+    <script type="text/javascript" src="<%=Url.Content("~/ModuleJs/Permission/Account.js?t=1.4")%>"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <form id="form1" runat="server">
@@ -23,22 +23,21 @@
         <a href="javascript:void(0);" onclick="queryData();" class="easyui-linkbutton" icon="icon-search">
             查询</a>
     </div>
-    <div id="west" region="west" split="true" title="组织架构树" style="width: 200px;">
+    <div id="west" region="west" split="true" title="用户架构" style="width: 200px;">
         <div id="dvAllGroup" class="tree-node" style="cursor: pointer;" onclick="searchAllGroup();">
             <span class="tree-indent"></span><span class="tree-icon tree-file"></span><span class="tree-title">
                 查询全部</span></div>
         <ul id="treeGroup">
-        </ul>
-        
+        </ul>        
     </div>
     <div id="center" region="center" title="用户列表" style="width: auto;">
         <table id="DataGrid">
         </table>
     </div>
-    <div region="east" title="岗位列表" style="width: 280px;">
+<%--    <div region="east" title="岗位列表" style="width: 280px;">
         <table id="GroupPosition">
         </table>
-    </div>
+    </div>--%>
     <uc2:PopupWin ID="PopupWin1" runat="server" />
     </form>
     <uc1:GroupPositionEdit ID="GroupPositionEdit1" runat="server" />

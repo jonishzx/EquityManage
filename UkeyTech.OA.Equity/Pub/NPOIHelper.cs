@@ -6,7 +6,7 @@ using NPOI.SS.UserModel;
 using NPOI.SS.Util;
 using NPOI.HSSF.UserModel;
 
-namespace UkeyTech.OA.Warranty
+namespace UkeyTech.OA.Equity.Pub
 {
     /// <summary>
     /// Excel 帮助类

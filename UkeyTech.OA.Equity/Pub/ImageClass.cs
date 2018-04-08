@@ -7,7 +7,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Drawing.Drawing2D;
 
-namespace UkeyTech.OA.Warranty.Pub
+namespace UkeyTech.OA.Equity.Pub
 {
 
     /// <summary>

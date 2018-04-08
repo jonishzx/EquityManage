@@ -2,7 +2,7 @@
 
 <%@ Import Namespace="Clover.Web.Core" %>
 <%@ Import Namespace="Clover.Config" %>
-<%@ Import Namespace="Clover.Web.HTMLRender" %>
+
 <%@ Import Namespace="StackExchange.Profiling" %>
 <%@ Register Src="../Shared/PopupWin.ascx" TagName="PopupWin" TagPrefix="uc2" %>
 <%@ Register Src="../Shared/Loading.ascx" TagName="Loading" TagPrefix="uc1" %>
@@ -36,20 +36,18 @@
         var oldsessionuserid = '<%= context.CurrentUser.UniqueId%>';
         var currRole = '<%= context.CurrentUser.CurrRoleName%>';
         <%} %>
-
-
 </script>
     <script type="text/javascript" src="<%=Url.Content("~/Scripts/jquery-1.7.2.min.js")%>"></script>
     <script type="text/javascript" src="<%=Url.Content("~/Scripts/EasyUI/jquery.easyui.min.js")%>"></script>
     <script type="text/javascript" src="<%=Url.Content("~/Scripts/Common.min.js")%>"></script>
-    <script type="text/javascript" src="<%=Url.Content("~/ModuleJs/home.min.js")%>"></script>
+    <script type="text/javascript" src="<%=Url.Content("~/ModuleJs/home.js?t=1.3")%>"></script>
     <script type="text/javascript" src="<%=Url.Content("~/Scripts/ForBidBackSpace.js")%>"></script>
 </head>
 <body class="easyui-layout">
     <uc1:Loading ID="Loading1" runat="server" />
     <div region="north" border="false">
         <div class="header" style="height: 60px; padding: 0; overflow: hidden;">
-            <div style="float: left; height: 60px; width: 250px; margin-top: 0px; background: url('/Scripts/EasyUI/themes/logo.png') no-repeat;">
+            <div style="float: left; height: 60px; width: 250px; margin-top: 0px;">
                 <div class="sysTitle" ><%=WebSiteConfig.Config.WebAppName%></div>
             </div>
             <div class="sysInfo">
@@ -57,7 +55,7 @@
             </div>
             <div class="sysLink">
                 <div style="width: 150px !important;">
-                    <a href="javascript:void(0)" id="mb1" class="easyui-menubutton" menu="#myconosle" <%--iconCls="icon-tip"--%>>控制台</a>
+                    <a href="javascript:void(0)" id="mb1" class="easyui-menubutton" menu="#myconosle">控制台</a>
                     <div id="myconosle" style="width: 150px; display: none">
                         <div id="achangeuser" iconcls="icon-swithuser" style="width: 150px; display: none"><a href="javascript:void(0)">切换用户</a></div>
                         <%if (Clover.Config.CPM.PermissionConfig.Config.EnableChangePosition)
@@ -153,7 +151,5 @@
                 onclick="closeLoginWin()" id="btnCancel">取消</a>
         </div>
     </div>
-    <!--<%if (Request.IsLocal)
-        {%><%=StackExchange.Profiling.MiniProfiler.RenderIncludes(RenderPosition.Right)%><%} %>-->
 </body>
 </html>

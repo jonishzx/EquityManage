@@ -20,7 +20,7 @@
             $("#GroupPosition").datagrid({
                 nowrap: false,
                 striped: true,
-                width: 400,
+                width: 450,
                 height: 200,
                 border: true,
                 url: GroupPositionUrl,
@@ -119,7 +119,7 @@
         });
             };
             $(function () {
-                loadGroupPosition();
+                //loadGroupPosition();
             });
         <%} %>
     </script>
@@ -160,7 +160,7 @@
                     <div class="form-clear-left">
                     </div>
                 </div>
-                <div class="ym-fbox-text">
+           <%--     <div class="ym-fbox-text">
                     <label class=" w110 required ">
                         邮件地址：</label>
                     <div class="form-element">
@@ -181,7 +181,7 @@
                     </div>
                     <div class="form-clear-left">
                     </div>
-                </div>
+                </div>--%>
                 <div class="ym-fbox-text">
                     <label class=" w110 required ">
                         联系电话：</label>
@@ -214,23 +214,7 @@
                     <div class="form-clear-left">
                     </div>
                 </div>
-
-                <div class="ym-fbox-text">
-                    <label class=" w110 required ">
-                        国籍：</label>
-                    <div class="form-element">
-                        <%Html.RenderPartial(Helper.DictDropDownListPath,
-                           new ViewDataDictionary(new
-                           {
-                               ID = "Nation",
-                               TextField = "NationName",
-                               Value = Model.Nation,
-                               AddEmptyItem = true,
-                               DictID = "Nation"
-                           }));%>
-                    </div>
-                </div>
-                <div class="ym-fbox-text">
+   <%--             <div class="ym-fbox-text">
                     <label class=" w110 required ">
                         用户部门：</label>
                     <div class="form-element">
@@ -244,90 +228,6 @@
                                   Value = ViewData["AdminGroupIds"],
                                   Width = "300"
                               }));%>
-                        <div class="form-clear-left">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ym-fbox-text">
-                    <label class=" w110 required ">
-                        用户类别：</label>
-                    <div class="form-element">
-                        <%Html.RenderPartial(Helper.DictDropDownListPath,
-                                new ViewDataDictionary(new
-                                {
-                                    ID = "EmpType",
-                                    DictID = "EmployeeType",
-                                    Value = Model.EmpType
-                                }));%> 
-                           （用于报销等级划分）
-                            <div class="form-clear-left">
-                            </div>
-                    </div>
-                </div>
-                <%-- <div class="ym-fbox-text">
-                    <label class=" w110 required ">
-                        成本中心：</label>
-                    <div class="form-element">
-                        <%Html.RenderPartial(Helper.PopupControlPath,
-                           new ViewDataDictionary(new
-                           {
-                               IDControlName = "UsedDeptCode",
-                               TextControlName = "UsedDeptName",
-                               DictID = "AllCost",
-                               width = "250",
-                               winWidth = "600",
-                               MutilSelect = false,
-                               Value = Model.UsedDeptCode
-                           }));%>
-                        <div class="form-clear-left">
-                        </div>
-                    </div>
-                </div>--%>
-                <%--<div class="ym-fbox-text">
-                    <label class=" w110 required ">
-                        预算部门：</label>
-                    <div class="form-element">
-                        <%Html.RenderPartial(Helper.PopupControlPath,
-                           new ViewDataDictionary(new
-                           {
-                               IDControlName = "BudgetDeptCode",
-                               TextControlName = "BudgetDeptName",
-                               DictID = "AllCostForIsBudget",
-                               width = "250",
-                               winWidth = "600",
-                               MutilSelect = false,
-                               Value = Model.BudgetDeptCode
-                           }));%>
-                        <div class="form-clear-left">
-                        </div>
-                    </div>
-                </div>--%>
-               <%-- <div class="ym-fbox-text">
-                    <label for="MappingAccount" class=" w110 required">
-                        映射账号：</label>
-                    <div class="form-element">
-                        <input name="MappingAccount" type="text" class="form-item-text"
-                            value="<%=Model.MappingAccount %>" maxlength="100" />
-                        <div style="clear: both;"><%= Html.ValidationMessage("MappingAccount")%></div>
-                    </div>
-                    <div class="form-clear-left">
-                    </div>
-                </div>--%>
-                <%--<div class="ym-fbox-text">
-                    <label class=" w110 required ">
-                        使用部门：</label>
-                    <div class="form-element">
-                        <%Html.RenderPartial(Helper.PopupControlPath,
-                                new ViewDataDictionary(new
-                                {
-                                    IDControlName = "UsedDeptCode",
-                                    TextControlName = "UsedDeptCodeName",
-                                    DictID = "BaseUsedDept",
-                                    Value = Model.UsedDeptCode,
-                                    TreeView = true,
-                                    Width = "300"
-                                }));%>
                         <div class="form-clear-left">
                         </div>
                     </div>
@@ -349,21 +249,7 @@
                         <div class="form-clear-left">
                         </div>
                     </div>
-                </div>
-                <%if (IsEdit)
-                  { %>
-                <div class="ym-fbox-text">
-                    <label class=" w110 required ">
-                        岗位列表：</label>
-                    <div class="form-element">
-                        <table id="GroupPosition">
-                        </table>
-                        <div class="form-clear-left">
-                        </div>
-                    </div>
-                </div>
-
-                <%} %>
+                </div>               
                 <div class="ym-fbox-text">
                     <label class=" w110 required ">
                         状 态：</label>

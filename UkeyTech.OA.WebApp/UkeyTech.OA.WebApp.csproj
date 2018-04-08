@@ -166,10 +166,6 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="UkeyTech.OA.FrameWork, Version=1.1.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\libs\Base\UkeyTech.OA.FrameWork.dll</HintPath>
-    </Reference>
     <Reference Include="UkeyTech.OA.WebApp.Admin, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\libs\Base\UkeyTech.OA.WebApp.Admin.dll</HintPath>
@@ -1181,194 +1177,6 @@
     <Content Include="Scripts\EasyUI\themes\skin_0\images\validatebox_pointer_left.gif" />
     <Content Include="Scripts\EasyUI\themes\skin_0\images\validatebox_pointer_top.gif" />
     <Content Include="Scripts\EasyUI\themes\skin_0\images\validatebox_warning.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\easyui.css" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\accordion_arrows.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\accordion_collapse.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\accordion_expand.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\blank.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\box_tit.jpg" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\button_a_bg.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\button_plain_hover.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\button_span_bg.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\calendar_arrows.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\calendar_nextmonth.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\calendar_nextyear.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\calendar_prevmonth.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\calendar_prevyear.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\combo_arrow.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\combo_arrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\datagrid_header_bg.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\datagrid_icons.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\datagrid_row_collapse.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\datagrid_row_expand.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\datagrid_row_num_bg.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\datagrid_sort_asc.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\datagrid_sort_desc.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\datagrid_title_bg.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\datebox_arrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\footer_bg.jpg" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\header_bg.jpg" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\input_bg.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\layout_arrows.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\layout_button_down.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\layout_button_left.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\layout_button_right.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\layout_button_up.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\linkbutton_bg.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\loading.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\login_bg.jpg" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\menu.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\menu_arrows.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\menu_downarrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\menu_rightarrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\menu_sep.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\menu_split_downarrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\messager_error.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\messager_icons.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\messager_info.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\messager_question.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\messager_warning.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\pagination_first.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\pagination_icons.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\pagination_last.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\pagination_load.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\pagination_loading.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\pagination_next.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\pagination_prev.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\panel_loading.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\panel_title.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\panel_title2.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\panel_tools.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\panel_tools.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\panel_tool_collapse.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\panel_tool_expand.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\searchbox_button.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\sidebox_bg.jpg" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\sidebox_lable_li.jpg" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\sidebox_lable_li_cur.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\sidebox_lable_li_cur2.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\slider_handle.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\spinner_arrows.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\spinner_arrow_down.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\spinner_arrow_up.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tabs_active.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tabs_close.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tabs_enabled.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tabs_icons.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tabs_leftarrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tabs_rightarrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_arrows.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_checkbox_0.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_checkbox_1.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_checkbox_2.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_dnd_no.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_dnd_yes.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_elbow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_file.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_file2.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_folder.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_folder_open.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_icons.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\tree_loading.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\validatebox_pointer.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\validatebox_pointer_bottom.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\validatebox_pointer_left.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\validatebox_pointer_top.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_1\images\validatebox_warning.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\easyui.css" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\accordion_arrows.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\accordion_collapse.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\accordion_expand.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\blank.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\box_tit.jpg" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\button_a_bg.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\button_plain_hover.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\button_span_bg.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\calendar_arrows.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\calendar_nextmonth.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\calendar_nextyear.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\calendar_prevmonth.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\calendar_prevyear.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\combo_arrow.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\combo_arrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\datagrid_header_bg.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\datagrid_icons.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\datagrid_row_collapse.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\datagrid_row_expand.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\datagrid_row_num_bg.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\datagrid_sort_asc.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\datagrid_sort_desc.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\datagrid_title_bg.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\datebox_arrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\footer_bg.jpg" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\header_bg.jpg" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\input_bg.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\layout_arrows.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\layout_button_down.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\layout_button_left.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\layout_button_right.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\layout_button_up.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\linkbutton_bg.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\loading.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\login_bg.jpg" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\menu.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\menu_arrows.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\menu_downarrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\menu_rightarrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\menu_sep.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\menu_split_downarrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\messager_error.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\messager_icons.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\messager_info.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\messager_question.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\messager_warning.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\pagination_first.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\pagination_icons.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\pagination_last.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\pagination_load.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\pagination_loading.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\pagination_next.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\pagination_prev.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\panel_loading.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\panel_title.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\panel_title2.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\panel_tools.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\panel_tools.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\panel_tool_collapse.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\panel_tool_expand.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\searchbox_button.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\sidebox_bg.jpg" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\sidebox_lable_li.jpg" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\sidebox_lable_li_cur.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\sidebox_lable_li_cur2.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\slider_handle.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\spinner_arrows.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\spinner_arrow_down.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\spinner_arrow_up.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tabs_active.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tabs_close.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tabs_enabled.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tabs_icons.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tabs_leftarrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tabs_rightarrow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_arrows.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_checkbox_0.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_checkbox_1.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_checkbox_2.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_dnd_no.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_dnd_yes.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_elbow.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_file.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_file2.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_folder.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_folder_open.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_icons.png" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\tree_loading.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\validatebox_pointer.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\validatebox_pointer_bottom.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\validatebox_pointer_left.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\validatebox_pointer_top.gif" />
-    <Content Include="Scripts\EasyUI\themes\skin_2\images\validatebox_warning.png" />
     <Content Include="Scripts\excanvas.js" />
     <Content Include="Scripts\fullcalendar\fullcalendar.min.css" />
     <Content Include="Scripts\fullcalendar\fullcalendar.min.js" />
@@ -1830,13 +1638,17 @@
     <None Include="Scripts\EasyUI\themes\default\images\Thumbs.db" />
     <None Include="Scripts\EasyUI\themes\gray\images\Thumbs.db" />
     <None Include="Scripts\EasyUI\themes\skin_0\images\Thumbs.db" />
-    <None Include="Scripts\EasyUI\themes\skin_1\images\Thumbs.db" />
-    <None Include="Scripts\EasyUI\themes\skin_2\images\Thumbs.db" />
     <Content Include="Tools\Init.ashx" />
     <Content Include="Views\Shared\CustomError.Master" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UkeyTech.OA.FrameWork\UkeyTech.OA.FrameWork.csproj">
+      <Project>{416554e8-924e-44b8-b57c-44eda46b4e8a}</Project>
+      <Name>UkeyTech.OA.FrameWork</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

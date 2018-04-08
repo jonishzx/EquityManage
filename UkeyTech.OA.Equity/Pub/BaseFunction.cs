@@ -2,7 +2,7 @@
 using System.Data;
 using Clover.Data;
 using Dapper;
-namespace UkeyTech.OA.Warranty.Pub
+namespace UkeyTech.OA.Equity.Pub
 {
     /// <summary>
     /// AccountTitle 数据访问层

@@ -121,9 +121,6 @@
       <Private>True</Private>
       <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="UkeyTech.OA.FrameWork">
-      <HintPath>..\..\..\libs\Base\UkeyTech.OA.FrameWork.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ArticleController.cs" />
@@ -152,6 +149,10 @@
     <ProjectReference Include="..\..\..\UkeyTech.OA.Equity\UkeyTech.OA.Equity.csproj">
       <Project>{fcb413ef-5874-4f7a-a0d9-7aaf24c389a2}</Project>
       <Name>UkeyTech.OA.Equity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\UkeyTech.OA.FrameWork\UkeyTech.OA.FrameWork.csproj">
+      <Project>{416554e8-924e-44b8-b57c-44eda46b4e8a}</Project>
+      <Name>UkeyTech.OA.FrameWork</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

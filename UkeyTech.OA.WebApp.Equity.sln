@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkeyTech.OA.Equity", "UkeyT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkeyTech.OA.WebApp.Equity", "UkeyTech.OA.WebApp\Areas\Equity\UkeyTech.OA.WebApp.Equity.csproj", "{FC384A28-0FEA-4333-BC7D-F23C51E6EA10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkeyTech.OA.FrameWork", "UkeyTech.OA.FrameWork\UkeyTech.OA.FrameWork.csproj", "{416554E8-924E-44B8-B57C-44EDA46B4E8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FC384A28-0FEA-4333-BC7D-F23C51E6EA10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC384A28-0FEA-4333-BC7D-F23C51E6EA10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC384A28-0FEA-4333-BC7D-F23C51E6EA10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{416554E8-924E-44B8-B57C-44EDA46B4E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{416554E8-924E-44B8-B57C-44EDA46B4E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{416554E8-924E-44B8-B57C-44EDA46B4E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{416554E8-924E-44B8-B57C-44EDA46B4E8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

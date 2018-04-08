@@ -1,5 +1,5 @@
 ﻿
-namespace UkeyTech.OA.Warranty.Pub
+namespace UkeyTech.OA.Equity.Pub
 {
     /// <summary>
     /// 明细列表的状态

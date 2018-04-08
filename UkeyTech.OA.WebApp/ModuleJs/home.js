@@ -242,7 +242,8 @@ $(function () {
     });
 
     initMemo();
-    initPortal();
+
+    //initPortal();
 
     //切换用户功能
     var windowWidth = document.documentElement.clientWidth;
@@ -293,9 +294,8 @@ $(function () {
     //setInterval(showMessageAlert, 600000); //1min 刷新
 
     loadCurrPost();
-
-    
 });
+
 var messageBeforeEvent = [];
 var messageAfterEvent = [];
 

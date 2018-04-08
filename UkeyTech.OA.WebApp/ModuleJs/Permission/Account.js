@@ -12,6 +12,7 @@ function searchAllGroup() {
     
     queryData();
 }
+
 function loadGroupPosition() { 
     $("#GroupPosition").datagrid({
         nowrap: false,
@@ -86,13 +87,13 @@ function loadGroupPosition() {
         }
     });
 }
+
 function init() {
     window.queryData = function () {
         LoadAccountGrid();
     }
     queryData();
-
-
+    
     $('#treeGroup').tree({
         url: GetGroupTree,
         onClick: function (node) {
@@ -102,7 +103,7 @@ function init() {
         }
     });
 
-    loadGroupPosition();
+    //loadGroupPosition();
 }
 
 $(document).ready(function () {
@@ -127,11 +128,10 @@ function LoadAccountGrid(code) {
             queryParams: getQueryDataParams(),
             columns: [[
                    { field: 'ck', checkbox: true },
-					{ field: 'AdminName', title: '用户名称', width: 60 },
+					{ field: 'AdminName', title: '用户名称', width: 100 },
 					{ field: 'LoginName', title: '登录帐号', width: 80 },
                     { field: 'Email', title: '邮件地址', width: 120 },
-					{ field: 'GroupNames', title: '部门', width: 250 },
-                    { field: 'MappingAccount', title: '映射账号', width: 100 },
+					//{ field: 'GroupNames', title: '用户角色', width: 250 },
                     { field: 'Status', title: '状态', width: 40,
                         formatter: function (value, rec) {
                             switch (value) {
@@ -187,12 +187,10 @@ function LoadAccountGrid(code) {
                 }
             }],
             onClickRow: function (index, data) {
-                if (index > -1) {
-
-                    hidAdminId = data.AdminId;
-                    loadGroupPosition();
-
-                }
+                //if (index > -1) {
+                //    hidAdminId = data.AdminId;
+                //    loadGroupPosition();
+                //}
             },
             onBeforeLoad: function () {
                 RemoveForbidButton();
