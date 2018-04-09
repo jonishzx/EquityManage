@@ -24,7 +24,7 @@
 
         var changeuserurl = '<%=Url.Action("ChangeUser","Account")%>';
 
-        var panels = <%=ViewData["Panels"]%>;
+        var panels = '<%=ViewData["Panels"]%>';
         var layout = '<%=ViewData["Layouts"]%>';
         var iCheckUserUrl = '<%=Url.Action("GetCurrSessionUserId","Utility")%>';
 
@@ -41,6 +41,7 @@
     <script type="text/javascript" src="<%=Url.Content("~/Scripts/EasyUI/jquery.easyui.min.js")%>"></script>
     <script type="text/javascript" src="<%=Url.Content("~/Scripts/Common.min.js")%>"></script>
     <script type="text/javascript" src="<%=Url.Content("~/ModuleJs/home.js?t=1.3")%>"></script>
+<%--    <script type="text/javascript" src="<%=Url.Content("~/ModuleJs/init.js?t=1.4")%>"></script>--%>
     <script type="text/javascript" src="<%=Url.Content("~/Scripts/ForBidBackSpace.js")%>"></script>
 </head>
 <body class="easyui-layout">
@@ -71,8 +72,11 @@
             </div>
         </div>
     </div>
-
-    <div region="west" split="true" border="true" title="系统菜单" style="width: 190px;" class="sidebarbox_bg">
+<%--   <div data-options="region:'west',split:true,title:'系统菜单'" style="width: 180px; background-color: white;">
+        <div id="RightAccordion" class="easyui-accordion">
+        </div>
+    </div>--%>
+     <div region="west" split="true" border="true" title="系统菜单" style="width: 190px;" class="sidebarbox_bg">
         <div class="sidebarbox">
             <ul class="lable">
                 <%foreach (var m in (dynamic)ViewData["PMenusItems"]) {%>
@@ -89,7 +93,6 @@
             </div>
         </div>
     </div>
-
     <div id="content" region="center" split="true" border="true">
         <div id="tabs" class="easyui-tabs" fit="true" border="false">
             <div id="desktop" title="我的桌面" icon="icon icon-home" closable="false">

@@ -241,7 +241,7 @@ $(function () {
         $(this).remove();
     });
 
-    initMemo();
+    //initMemo();
 
     //initPortal();
 
@@ -287,9 +287,9 @@ $(function () {
     });
 
     //大小变化影响部件布局
-    $(window).wresize(function () {
-        setTimeout(function () { $('#pp').portal('resize') }, 500);
-    });
+    //$(window).wresize(function () {
+    //    setTimeout(function () { $('#pp').portal('resize') }, 500);
+    //});
     //messageAfterEvent.push(popupMessager);
     //setInterval(showMessageAlert, 600000); //1min 刷新
 

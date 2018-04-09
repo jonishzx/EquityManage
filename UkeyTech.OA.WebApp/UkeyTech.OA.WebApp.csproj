@@ -166,10 +166,6 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="UkeyTech.OA.WebApp.Admin, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\libs\Base\UkeyTech.OA.WebApp.Admin.dll</HintPath>
-    </Reference>
     <Reference Include="WebGrease">
       <HintPath>..\libs\WebGrease.dll</HintPath>
     </Reference>
@@ -179,6 +175,22 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\FrameWork\AccountController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FrameWork\AttachmentController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FrameWork\MessageController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FrameWork\SystemController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FrameWork\UtilityController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FrameWork\WidgetController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\Permission\PermissionController.FuncDataRule.cs" />
+    <Compile Include="Areas\Admin\Controllers\Permission\PermissionController.FuncPermission.cs" />
+    <Compile Include="Areas\Admin\Controllers\Permission\PermissionController.Function.cs" />
+    <Compile Include="Areas\Admin\Controllers\Permission\PermissionController.Group.cs" />
+    <Compile Include="Areas\Admin\Controllers\Permission\PermissionController.Module.cs" />
+    <Compile Include="Areas\Admin\Controllers\Permission\PermissionController.PMSystem.cs" />
+    <Compile Include="Areas\Admin\Controllers\Permission\PermissionController.Position.cs" />
+    <Compile Include="Areas\Admin\Controllers\Permission\PermissionController.Role.cs" />
     <Compile Include="Controllers\IndexController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Extenstion\DownloadAttachment.ashx.cs">
@@ -189,6 +201,7 @@
       <DependentUpon>PreviewAttachment.ashx</DependentUpon>
     </Compile>
     <Compile Include="Extenstion\MyRazorViewEngine.cs" />
+    <Compile Include="Extenstion\SysModuleNavModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -780,6 +793,7 @@
     <Content Include="Content\uploader_styles\ssi-uploader.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="ModuleJs\init.js" />
     <Content Include="ModuleJs\Permission\RolePermissionTree.js" />
     <Content Include="ModuleJs\WorkFlow\UserBizAssignForAdmin.js" />
     <Content Include="ModuleJs\Permission\RolePermission.js" />
@@ -1618,15 +1632,6 @@
     <Content Include="Areas\Admin\Views\Shared\Site.Master" />
     <Content Include="Areas\Admin\Views\Web.config" />
     <Content Include="Areas\Admin\Views\WorkFlow\WorkflowItem.Master" />
-    <Content Include="Areas\Admin\Web.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Areas\Admin\Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Areas\Admin\Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
     <Content Include="Config\Website.config">
       <SubType>Designer</SubType>
     </Content>
