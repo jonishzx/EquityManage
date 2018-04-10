@@ -96,7 +96,6 @@ function DeleteRoles() {
                                 hiddenOwnerValue = null;
                             }
                         });
-
                     }
                 });
             }
